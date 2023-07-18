@@ -14,7 +14,7 @@ function Features() {
   const [offset, setOffset] = useState(700);
 
   useEffect(() => {
-    setOffset(window.innerHeight / 2 - 100);
+    setOffset(window.innerHeight / 2);
   }, []);
 
   useEffect(() => {
