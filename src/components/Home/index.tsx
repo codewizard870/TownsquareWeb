@@ -56,7 +56,7 @@ const Home = () => {
               <button
                 className="px-2 md:px-4 lg:px-8 h-12 text-[18px] text-black font-semibold bg-white hover:bg-[#CCCCCC] active:bg-[#AAAAAA] rounded-full whitespace-nowrap"
               >
-                Get early access
+                Join waitlist
               </button>
               <button
                 className="px-2 md:px-4 lg:px-6 h-12 flex items-center text-[18px] text-white font-semibold  hover:bg-[#FFFFFF33] active:bg-[#FFFFFF66] border-2 border-white rounded-full whitespace-nowrap"
