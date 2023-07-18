@@ -9,62 +9,62 @@ function Screen1() {
 
   useEffect(() => {
     ScrollTrigger.create({
-      trigger: "#home",
-      start: "top top+=-7000px",
-      end: "top top+=-7300px",
+      trigger: "#feature",
+      start: "top top+=-300px",
+      end: "top top+=-600px",
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
           node.style.opacity = 1 - self.progress;
-          node.style.transform = `translate(-50%, ${-200 * self.progress}px)`;
+          node.style.transform = `translate(-50%, ${-20 * self.progress}vh)`;
         }
       },
     });
     ScrollTrigger.create({
-      trigger: "#home",
-      start: "top top+=-7000px",
-      end: "top top+=-7300px",
+      trigger: "#feature",
+      start: "top top+=-300px",
+      end: "top top+=-600px",
       onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
-          node.style.transform = `translate(calc(-50% - ${300 * self.progress}px), ${-250 * self.progress}px)`
+          node.style.transform = `translate(calc(-50% - ${20 * self.progress}vw), ${-10 * self.progress}vh)`
         }
       },
     });
     ScrollTrigger.create({
-      trigger: "#home",
-      start: "top top+=-7000px",
-      end: "top top+=-7300px",
+      trigger: "#feature",
+      start: "top top+=-300px",
+      end: "top top+=-600px",
       onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
           node.style.opacity = self.progress;
-          node.style.transform = `translate(calc(${-800 * self.progress}px), 0px)`
+          node.style.transform = `translate(calc(${-50 * self.progress}vw), 0px)`
         }
       },
     });
 
     ScrollTrigger.create({
-      trigger: "#home",
-      start: "top top+=-7600px",
-      end: "top top+=-7900px",
+      trigger: "#feature",
+      start: "top top+=-900px",
+      end: "top top+=-1200px",
       onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
           node.style.opacity = 1 - self.progress;
-          node.style.transform = `translate(calc(-50% - 300px - ${400 * self.progress}px), ${-250 + 500 * self.progress}px)`
+          node.style.transform = `translate(calc(-50% - 20vw - ${50 * self.progress}vw), calc(-10vh + ${50 * self.progress}vh))`
         }
       },
     });
     ScrollTrigger.create({
-      trigger: "#home",
-      start: "top top+=-7600px",
-      end: "top top+=-7900px",
+      trigger: "#feature",
+      start: "top top+=-900px",
+      end: "top top+=-1200px",
       onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
           node.style.opacity = 1 - self.progress;
-          node.style.transform = `translate(calc(-800px - ${400 * self.progress}px), ${500 * self.progress}px)`
+          node.style.transform = `translate(calc(-50vw - ${50 * self.progress}vw), ${50 * self.progress}vh)`
         }
       },
     });
@@ -81,11 +81,11 @@ function Screen1() {
         </div>
         <img src="/images/financial_img.png" alt="sign" className="self-center" />
       </div>
-      <img ref={ref2} src="/images/features/feed.svg" alt='feature1' className="absolute w-[300px] self-center mt-10 -translate-x-1/2"
-        style={{ left: `50%`, top: `160px` }}
+      <img ref={ref2} src="/images/features/feed.svg" alt='feature1' className="absolute w-[300px] self-center  -translate-x-1/2"
+        style={{ left: `50%`, top: `20vh` }}
       />
       <div ref={ref3} className="absolute w-[500px] opacity-0"
-        style={{ left: `1500px`, top: `150px` }}
+        style={{ left: `100vw`, top: `30vh` }}
       >
         <h1 className="text-[40px] font-bold">
           Contextual social feed

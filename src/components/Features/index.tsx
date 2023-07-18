@@ -31,7 +31,7 @@ function Features() {
   return (
     <div className="features-wrapper" id="feature">
       <Controller>
-        <Scene duration={10000} pin offset={`${offset}px`}>
+        <Scene duration={2500} pin offset={`${offset}px`}>
           <div className="w-full relative">
             <Background />
             <Screen1 />
