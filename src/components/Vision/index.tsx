@@ -25,12 +25,24 @@ function Vision() {
 
   return (
    <div className="h-full bg-black bg-right-bottom bg-no-repeat bg-contain scroll-smooth bg-vision-bg">
+          <div className="absolute h-full w-screen">
+              <p className="absolute hidden font-bold opacity-50 top-20 lg:inline-block">~ equal access to financial service</p>
+              <p className="absolute hidden font-bold opacity-25 lg:top-1/4 lg:inline-block">~ seamless networking</p>
+              <p className="absolute  hidden font-bold opacity-25 lg:top-1/4 lg:right-[-13%] lg:inline-block">~ protect personal data</p>
+              <p  className="absolute hidden font-bold opacity-25 left-20 whitespace-nowrap md:top-32 md:inline-block md:text-2xl lg:font-medium  lg:font-mediumlg:inline-block md:left-[63%] lg:bottom-[10%] lg:left-[17%]">~ manage personal data</p>
+              <p className="absolute font-bold opacity-50 top-16 lg:left-[-13%] lg:top-1/4 md:top-[25%] md:left-[6%] md:text-2xl lg:font-medium  ">~ full control</p>
+              <p className="absolute font-bold opacity-20 top-32 right-px md:top-[33%] lg:top-[69%] lg:left-[48%] md:text-2xl lg:font-medium">= p2p payment</p>
+              <p  className="absolute font-bold opacity-50 bottom-40 focus-visible:opacity-100 right-4 lg:left-[-43%] md:left-[61%] md:bottom-[31%] md:text-2xl lg:font-medium lg:top-[47%]">~ financial freedom</p>
+              <p className="absolute font-bold opacity-25 -left-1 bottom-20 lg:top-[69%] whitespace-nowrap lg:left-[89%] md:bottom-[35%] md:text-2xl lg:font-medium">=Identity freedom</p>
+              <p className="absolute font-bold opacity-20 whitespace-nowrap -right-2 bottom-6 lg:bottom-[20%] md:bottom-[15%] md:left-[32%]  md:text-2xl lg:left-[-1%]">=Open finance</p>
+            </div>
              
       <div className='h-[700vh]'>
         <div className="sticky sticky_2 overflow-hidden top-0 h-[100vh]">
-          <div className='absolute top-0 scroll_section h-[100%] w-[700vw] will-change-transform flex'>
-               <div className='h-[400vh]'>
-                <div className='sticky sticky_1 overflow-hidden w-screen top-0 h-[100vh]'>
+          <div className='relative top-0 scroll_section h-[100%] w-[700vw] will-change-transform flex'>
+           
+               <div className='h-[400vh] relative'>
+                <div className='sticky overflow-hidden w-screen top-0 h-[100vh]'>
                   <div className='absolute h-[100%] w-[400vw] scroll_section_1 will-change-transform flex'>
                      <div  className="bg-no-repeat bg-cover bg-L3">
                       {/* <Reveal>
@@ -40,18 +52,7 @@ function Vision() {
                           display:"flex"
                         }} duration={0} stagger={0.5}> */}
                           <div  className="flex items-center justify-center w-screen h-screen text-white bg-black lg:bg-transparent font-Outfit">
-                        <div className="relative flex items-center justify-center h-full">
-                          <p className="absolute hidden font-bold opacity-50 top-20 lg:inline-block">~ equal access to financial service</p>
-                          <p className="absolute hidden font-bold opacity-25 lg:top-1/4 lg:inline-block">~ seamless networking</p>
-                          <p className="absolute  hidden font-bold opacity-25 lg:top-1/4 lg:right-[-13%] lg:inline-block">~ protect personal data</p>
-                          <p  className="absolute hidden font-bold opacity-25 left-20 whitespace-nowrap md:top-32 md:inline-block md:text-2xl lg:font-medium  lg:font-mediumlg:inline-block md:left-[63%] lg:bottom-[10%] lg:left-[17%]">~ manage personal data</p>
-                          <p className="absolute font-bold opacity-50 top-16 lg:left-[-13%] lg:top-1/4 md:top-[25%] md:left-[6%] md:text-2xl lg:font-medium  ">~ full control</p>
-                          <p className="absolute font-bold opacity-20 top-32 right-px md:top-[33%] lg:top-[69%] lg:left-[48%] md:text-2xl lg:font-medium">= p2p payment</p>
-                          <p  className="absolute font-bold opacity-50 bottom-40 focus-visible:opacity-100 right-4 lg:left-[-43%] md:left-[61%] md:bottom-[31%] md:text-2xl lg:font-medium lg:top-[47%]">~ financial freedom</p>
-                          <p className="absolute font-bold opacity-25 -left-1 bottom-20 lg:top-[69%] whitespace-nowrap lg:left-[89%] md:bottom-[35%] md:text-2xl lg:font-medium">=Identity freedom</p>
-                          <p className="absolute font-bold opacity-20 whitespace-nowrap -right-2 bottom-6 lg:bottom-[20%] md:bottom-[15%] md:left-[32%]  md:text-2xl lg:left-[-1%]">=Open finance</p>
-                         
-                         
+                          <div className="flex items-center justify-center h-full">
                           <ScrollTrigger start={`${percentage}px`} end= {`${percentage}px`}scrub={0.5}>
                             <div className="z-50 flex flex-col items-center justify-center">
                               <Tween from={{
@@ -122,7 +123,8 @@ function Vision() {
               </div>
              
               </div>
-              <div className="bg-no-repeat bg-cover bg-L3"> 
+             <div className="relative">
+               <div className="bg-no-repeat bg-cover bg-L3"> 
               <div className="flex items-center justify-center w-screen h-screen"> 
                 <div> 
                   <p className="text-2xl text-center text-white">Envision a future where everyone has</p>
@@ -138,6 +140,7 @@ function Vision() {
                 </div>
             </div>
             </div>
+             </div>
            
                <div className='flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row'>
               <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
