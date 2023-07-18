@@ -2,15 +2,15 @@ import { Reveal, Tween, SplitChars, ScrollTrigger,  SplitWords } from 'react-gsa
 
 
 
-
+let percentage = 0
 function Vision() {
     const transform = () => {
       const sticky = document.querySelector('.sticky_2')
       const offSetTop = sticky?.parentElement?.offsetTop
       const scrollSection = sticky?.querySelector('.scroll_section')
-      let percentage = 0;
+      
       if(offSetTop !== undefined){
-         let value = ((window.scrollY - offSetTop) / window.innerHeight) * 100
+         let value = (((window.scrollY - 330) - offSetTop) / window.innerHeight) * 100
         percentage = value < 0 ? 0 : value > 400 ? 400 : value
       }
 
@@ -18,18 +18,20 @@ function Vision() {
     }
 
   window.addEventListener('scroll',(e) => {
+    console.log(window.scrollY )
     transform()
   })
 
 
   return (
-    <div className="relative bg-black">
-      <div>
-        <img src='/images/vision_bg.svg' alt="left" className='absolute z-0 h-full right-0 ' />
-      </div>
-              <div className='h-[300vh]'>
+   <div className="h-full bg-black bg-right-bottom bg-no-repeat bg-cover scroll-smooth bg-vision-bg">
+             
+      <div className='h-[700vh]'>
+        <div className="sticky sticky_2 overflow-hidden top-0 h-[100vh]">
+          <div className='absolute top-0 scroll_section h-[100%] w-[700vw] will-change-transform flex'>
+               <div className='h-[400vh]'>
                 <div className='sticky sticky_1 overflow-hidden w-screen top-0 h-[100vh]'>
-                  <div className='absolute h-[100%] w-[300vw] scroll_section_1 will-change-transform flex'>
+                  <div className='absolute h-[100%] w-[400vw] scroll_section_1 will-change-transform flex'>
                      <div  className="bg-no-repeat bg-cover bg-L3">
                       {/* <Reveal>
                         <Tween from={{
@@ -50,7 +52,7 @@ function Vision() {
                           <p className="absolute font-bold opacity-20 whitespace-nowrap -right-2 bottom-6 lg:bottom-[20%] md:bottom-[15%] md:left-[32%]  md:text-2xl lg:left-[-1%]">=Open finance</p>
                          
                          
-                          <ScrollTrigger start="800px" end= "800px"scrub={0.5} >
+                          <ScrollTrigger start={`${percentage}px`} end= {`${percentage}px`}scrub={0.5}>
                             <div className="z-50 flex flex-col items-center justify-center">
                               <Tween from={{
                               opacity: 0.1
@@ -120,10 +122,6 @@ function Vision() {
               </div>
              
               </div>
-      <div className='h-[450vh]'>
-        <div className="sticky sticky_2 overflow-hidden top-0 h-[100vh]">
-          <div className='absolute top-0 scroll_section h-[100%] w-[450vw] will-change-transform flex'>
-           
               <div className="bg-no-repeat bg-cover bg-L3"> 
               <div className="flex items-center justify-center w-screen h-screen"> 
                 <div> 
