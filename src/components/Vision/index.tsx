@@ -23,10 +23,10 @@ function Vision() {
 
 
   return (
-    
-    <div className="bg-fixed bg-black bg-right-bottom bg-no-repeat bg-cover bg-vision-bg-mobile md:bg-vision-bg-tablet lg:bg-vision-bg">
-       
-            
+    <div className="relative bg-black">
+      <div>
+        <img src='/images/vision_bg.svg' alt="left" className='absolute z-0 h-full right-0 ' />
+      </div>
               <div className='h-[300vh]'>
                 <div className='sticky sticky_1 overflow-hidden w-screen top-0 h-[100vh]'>
                   <div className='absolute h-[100%] w-[300vw] scroll_section_1 will-change-transform flex'>
