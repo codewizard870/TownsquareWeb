@@ -1,8 +1,5 @@
 import { Reveal, Tween, SplitChars, ScrollTrigger,  SplitWords } from 'react-gsap';
 
-
-
-
 function Vision() {
     const transform = () => {
       const sticky = document.querySelector('.sticky_2')
@@ -27,7 +24,7 @@ function Vision() {
       <div>
         <img src='/images/vision_bg.svg' alt="left" className='absolute z-0 h-full right-0 ' />
       </div>
-              <div className='h-[300vh]'>
+              <div className='h-[300vh] component' data-component="Introduction">
                 <div className='sticky sticky_1 overflow-hidden w-screen top-0 h-[100vh]'>
                   <div className='absolute h-[100%] w-[300vw] scroll_section_1 will-change-transform flex'>
                      <div  className="bg-no-repeat bg-cover bg-L3">
@@ -120,7 +117,7 @@ function Vision() {
               </div>
              
               </div>
-      <div className='h-[450vh]'>
+      <div className='h-[450vh] component' data-component="Vision">
         <div className="sticky sticky_2 overflow-hidden top-0 h-[100vh]">
           <div className='absolute top-0 scroll_section h-[100%] w-[450vw] will-change-transform flex'>
            
@@ -227,6 +224,6 @@ function Vision() {
       </div>
     </div>
   )
-}
+};
 
 export default Vision

@@ -20,3 +20,10 @@ body{
   font-family: Outfit, Urbanist, Arial, Helvetica, sans-serif;
   color: white;
 }
+
+.right-panel-menu ul li.active {
+  color: #00EEFD;
+}
+.right-panel-menu.transition-transform {
+  transition-duration: 600ms;
+}

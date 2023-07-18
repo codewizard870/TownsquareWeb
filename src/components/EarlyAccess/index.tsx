@@ -36,7 +36,7 @@ function EarlyAccess() {
   };
 
   return (
-    <>
+    <div className="early-access component" data-component="Early">
       <div className='bg-black'>
         <div className='relative max-md:hidden'>
           <img src='/images/early_left.svg' alt="left" className='absolute top-[0px] z-0' />
@@ -97,8 +97,8 @@ function EarlyAccess() {
         </div>
         
       </div>
-    </>
+    </div>
   )
-}
+};
 
 export default EarlyAccess

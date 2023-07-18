@@ -1,19 +1,61 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Home from './components/Home';
 import Header from './components/Header';
 import Vision from './components/Vision';
 import Features from './components/Features';
 import EarlyAccess from './components/EarlyAccess';
 import { Footer } from './components/Footer';
+import RightPanelMenu from './components/RightPanel';
 
 function App() {
+  const [currentComponent, setCurrentComponent] = useState<string | null>(null);
+  const components = ['Home', 'Introduction', 'Vision', 'Features', 'Early'];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const positions = components.map((component) => {
+        const element = document.querySelector(`[data-component="${component}"]`);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return {
+            name: component,
+            top: rect.top + scrollY,
+            bottom: rect.bottom + scrollY,
+          };
+        }
+        return null;
+      });
+
+      const visibleComponent = positions.find((position) => {
+        return position && position.top <= scrollY + windowHeight / 2 && position.bottom >= scrollY + windowHeight / 2;
+      });
+
+      if (visibleComponent) {
+        setCurrentComponent(visibleComponent.name);
+      } else {
+        setCurrentComponent('');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <Header/>
       <Home/>
-      <Vision/>
-      <Features/>
-      <EarlyAccess/>
+      <div className='relative'>
+        <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} />
+        <Vision />
+        <Features />
+        <EarlyAccess />
+      </div>
       <Footer/>
     </div>
   );
