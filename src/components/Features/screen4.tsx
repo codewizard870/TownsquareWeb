@@ -58,7 +58,7 @@ function Screen4() {
       },
     });
     ScrollTrigger.refresh();
-  }, []);
+  }, []); 
 
   return (
     <>
