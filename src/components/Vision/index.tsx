@@ -55,7 +55,7 @@ function Vision() {
                           <ScrollTrigger start={`${percentage}px`} end= {`${percentage}px`}scrub={0.5}>
                             <div className="z-50 flex flex-col items-center justify-center">
                               <Tween from={{
-                              opacity: 0.1
+                              opacity: 1
                             }} to={{
                               opacity: 1
                             }} ease="elastic.out(0.1, 0.1)" 
@@ -71,7 +71,7 @@ function Vision() {
                             </SplitWords>
                           </Tween>
                           <Tween from={{
-                              opacity: 0.1
+                              opacity: 1
                             }} to={{
                               opacity: 1
                             }} ease="elastic.out(0.1, 0.1)" 
@@ -88,7 +88,7 @@ function Vision() {
                           </Tween>
                            
                             <Tween from={{
-                              opacity: 0.1
+                              opacity: 1
                             }} to={{
                               opacity: 1
                             }} ease="elastic.out(0.1, 0.1)" 
@@ -127,7 +127,7 @@ function Vision() {
                 <div> 
                   <p className="text-2xl text-center text-white">Envision a future where everyone has</p>
                   <Reveal repeat>
-                    <Tween from={{color:'#FFF'}} to={{color:'#00EEFD'}} duration={4} stagger={0.2} >
+                    <Tween from={{color:'#FFF'}} to={{color:'#FFF'}} duration={4} stagger={0.2} >
                       <SplitChars
                         wrapper={<h1 className="text-[38px] font-Outfit font-medium" style={{ display: 'inline-block' }} />}
                       >
