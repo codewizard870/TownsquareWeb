@@ -24,7 +24,7 @@ function Vision() {
 
 
   return (
-   <div className="h-full bg-black bg-right-bottom bg-no-repeat bg-cover scroll-smooth bg-vision-bg">
+   <div className="h-full bg-black bg-right-bottom bg-no-repeat bg-contain scroll-smooth bg-vision-bg">
              
       <div className='h-[700vh]'>
         <div className="sticky sticky_2 overflow-hidden top-0 h-[100vh]">
@@ -138,13 +138,7 @@ function Vision() {
                 </div>
             </div>
             </div>
-           <Reveal repeat>
-            <Tween from={{
-              opacity:0.25
-            }}
-            to={{
-              opacity:1
-            }}>
+           
                <div className='flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row'>
               <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                 <img className="w-full" src="/images/financial_freedom.svg" alt="financial_freedom"/>
@@ -164,16 +158,10 @@ function Vision() {
               </div>
             </div>
            
-            </Tween>
-           </Reveal>
+           
        
 
-        <Reveal>
-          <Tween from={{
-            opacity:0.25
-          }} to={{
-            opacity:1
-          }}>
+        
             <div className='flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row'>
         <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
           <img className="w-full" src="/images/informational_freedom.svg" alt="financial_freedom"/>
@@ -192,14 +180,8 @@ function Vision() {
           </p>
         </div>
         </div>
-          </Tween>
-        </Reveal>
-        <Reveal repeat>
-        <Tween from={{
-          opacity:0.25
-        }} to={{
-          opacity:1
-        }}>
+         
+       
            <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row">
         <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
           <img className="w-full" src="/images/identity_freedom.svg" alt='identity_freedom'/>
@@ -218,8 +200,7 @@ function Vision() {
           </p>
         </div>
         </div>
-        </Tween>
-       </Reveal>
+        
           </div>
         </div>
       </div>
