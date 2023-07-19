@@ -53,6 +53,6 @@ function Features() {
       </Controller>
     </div>
   )
-}
+};
 
 export default Features
