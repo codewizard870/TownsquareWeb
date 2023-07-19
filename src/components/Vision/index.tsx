@@ -45,7 +45,6 @@ function Vision() {
           start="800px"
           end="1200px"
           scrub={0.5}
-          markers
         >
           <div className="sticky sticky_2 overflow-hidden top-0 h-[100vh]">
             <Tween
