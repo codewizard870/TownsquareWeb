@@ -26,7 +26,7 @@ function Vision() {
     if (intro !== undefined) {
       setFirst(intro * 2);
     }
-    console.log(intro);
+    // console.log(intro);
     scrollSection?.setAttribute(
       "style",
       `transform:translate3d(${-percentage}vw, 0, 0)`
@@ -34,7 +34,7 @@ function Vision() {
   };
 
   window.addEventListener("scroll", (e) => {
-    console.log(window.scrollY, first);
+    // console.log(window.scrollY, first);
     transform();
   });
 
@@ -83,7 +83,7 @@ function Vision() {
             </Tween>
 
             <div className="relative scroll_section h-[100%] w-[700vw] will-change-transform flex">
-              <div className="bg-no-repeat bg-cover bg-L3">
+              <div className="bg-no-repeat bg-cover bg-L3" data-component="Introduction">
                 <div className="relative flex items-center justify-center w-screen h-screen text-white bg-black left-100 lg:bg-transparent font-Outfit">
                   <div className="flex items-center justify-center h-full">
                     <div className="flex flex-col items-center justify-center intro">
@@ -107,7 +107,7 @@ function Vision() {
                 </div>
               </div>
 
-              <div className="z-[50] bg-no-repeat bg-cover bg-L3">
+              <div className="z-[50] bg-no-repeat bg-cover bg-L3" data-component="Vision">
                 <div className="flex items-center justify-center w-screen h-screen envision">
                   <div className="text-center">
                     <p className="text-[32px] text-center text-white">
@@ -138,7 +138,7 @@ function Vision() {
                   </div>
                 </div>
               </div>
-              <div className="bg-no-repeat bg-cover bg-L5">
+              <div className="bg-no-repeat bg-cover bg-L5" data-component="Vision">
                 <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white financial z-100 font-Outfit lg:flex-row md:flex-row">
                   <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
@@ -165,7 +165,7 @@ function Vision() {
                   </div>
                 </div>
               </div>
-              <div className="bg-no-repeat bg-cover bg-L6">
+              <div className="bg-no-repeat bg-cover bg-L6" data-component="Vision">
                 <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row">
                   <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
@@ -194,7 +194,7 @@ function Vision() {
                   </div>
                 </div>
               </div>
-              <div className="bg-no-repeat bg-cover bg-L7">
+              <div className="bg-no-repeat bg-cover bg-L7" data-component="Vision">
                 <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row">
                   <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
