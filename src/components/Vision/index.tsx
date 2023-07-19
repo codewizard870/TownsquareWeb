@@ -16,17 +16,17 @@ function Vision() {
     const sticky = document.querySelector(".sticky_2");
     const offSetTop = sticky?.parentElement?.offsetTop;
     const scrollSection = sticky?.querySelector(".scroll_section");
-    let value = 0
+    let value = 0;
     if (offSetTop !== undefined) {
       value = ((window.scrollY - offSetTop) / window.innerHeight) * 100;
       percentage = value < 0 ? 0 : value > 400 ? 400 : value;
     }
 
-     const intro = document.querySelector(".intro")?.parentElement?.offsetWidth
-     if(intro !== undefined){
-      setFirst(intro * 2)
-     }
-    console.log(intro)
+    const intro = document.querySelector(".intro")?.parentElement?.offsetWidth;
+    if (intro !== undefined) {
+      setFirst(intro * 2);
+    }
+    console.log(intro);
     scrollSection?.setAttribute(
       "style",
       `transform:translate3d(${-percentage}vw, 0, 0)`
@@ -41,11 +41,7 @@ function Vision() {
   return (
     <div className="h-full bg-black bg-right-bottom bg-no-repeat bg-contain scroll-smooth lg:bg-vision-bg">
       <div className="h-[700vh]">
-        <ScrollTrigger
-          start="800px"
-          end="1200px"
-          scrub={0.5}
-        >
+        <ScrollTrigger start="800px" end="1200px" scrub={0.5}>
           <div className="sticky sticky_2 overflow-hidden top-0 h-[100vh]">
             <Tween
               from={{
@@ -139,85 +135,89 @@ function Vision() {
                   </div>
                 </div>
               </div>
-
-              <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white financial z-100 font-Outfit lg:flex-row md:flex-row">
-                <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
-                  <img
-                    className="w-full"
-                    src="/images/financial_freedom.svg"
-                    alt="financial_freedom"
-                  />
-                </div>
-                <div>
-                  <p className="py-2 font-light">With TowneSquare you get</p>
-                  <div className="py-4">
-                    <h1 className="text-3xl ">Financial freedom</h1>
+              <div className="bg-no-repeat bg-cover bg-L5">
+                <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white financial z-100 font-Outfit lg:flex-row md:flex-row">
+                  <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
-                      src="/images/financial_img.png"
-                      alt="financial_image"
+                      className="w-full"
+                      src="/images/financial_freedom.svg"
+                      alt="financial_freedom"
                     />
                   </div>
-                  <p className="font-light leading-6 lg:text-xl">
-                    Don't like centralized institutions or other third{" "}
-                    <p>parties mess with your finance? Neither do we</p>
-                    <p> Liberate yourself and seize limitless financial</p>
-                    <p>opportunities with TowneSquare.</p>
-                  </p>
+                  <div>
+                    <p className="py-2 font-light">With TowneSquare you get</p>
+                    <div className="py-4">
+                      <h1 className="text-3xl ">Financial freedom</h1>
+                      <img
+                        src="/images/financial_img.png"
+                        alt="financial_image"
+                      />
+                    </div>
+                    <p className="font-light leading-6 lg:text-xl">
+                      Don't like centralized institutions or other third{" "}
+                      <p>parties mess with your finance? Neither do we</p>
+                      <p> Liberate yourself and seize limitless financial</p>
+                      <p>opportunities with TowneSquare.</p>
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row">
-                <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
-                  <img
-                    className="w-full"
-                    src="/images/informational_freedom.svg"
-                    alt="financial_freedom"
-                  />
-                </div>
-                <div>
-                  <p className="py-2 font-light">With TowneSquare you get</p>
-                  <div className="py-4">
-                    <h1 className="text-3xl ">Informational freedom</h1>
+              <div className="bg-no-repeat bg-cover bg-L6">
+                <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row">
+                  <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
-                      src="/images/financial_img.png"
-                      alt="financial_image"
+                      className="w-full"
+                      src="/images/informational_freedom.svg"
+                      alt="financial_freedom"
                     />
                   </div>
-                  <p className="font-light leading-6 lg:text-xl">
-                    Ignite the flow of information and ideas{" "}
-                    <p>in a public town square, governed by</p>
-                    <p> user-defined rules, liberated from the </p>
-                    <p>grasp of centralized data managers.</p>
-                    <p>Explore, share and discover without</p>
-                    <p>Limitation</p>
-                  </p>
+                  <div>
+                    <p className="py-2 font-light">With TowneSquare you get</p>
+                    <div className="py-4">
+                      <h1 className="text-3xl ">Informational freedom</h1>
+                      <img
+                        src="/images/financial_img.png"
+                        alt="financial_image"
+                      />
+                    </div>
+                    <p className="font-light leading-6 lg:text-xl">
+                      Ignite the flow of information and ideas{" "}
+                      <p>in a public town square, governed by</p>
+                      <p> user-defined rules, liberated from the </p>
+                      <p>grasp of centralized data managers.</p>
+                      <p>Explore, share and discover without</p>
+                      <p>Limitation</p>
+                    </p>
+                  </div>
                 </div>
               </div>
-
-              <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row">
-                <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
-                  <img
-                    className="w-full"
-                    src="/images/identity_freedom.svg"
-                    alt="identity_freedom"
-                  />
-                </div>
-                <div>
-                  <p className="py-2 font-light">With TowneSquare you get</p>
-                  <div className="py-4">
-                    <h1 className="text-3xl">Identity freedom</h1>
+              <div className="bg-no-repeat bg-cover bg-L7">
+                <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row">
+                  <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
-                      src="/images/financial_img.png"
-                      alt="financial_image"
+                      className="w-full"
+                      src="/images/identity_freedom.svg"
+                      alt="identity_freedom"
                     />
                   </div>
-                  <p className="font-light leading-6 lg:text-xl">
-                    Embrace the power to shape and{" "}
-                    <p>cultivate your unique identity and </p>{" "}
-                    <p> persona. Own your verifable history </p>{" "}
-                    <p> records, securely stored on decentralized</p>
-                    <p>ledgers, empowering you to define and </p>{" "}
-                    <p> express yourself authentically.</p>
-                  </p>
+                  <div>
+                    <p className="py-2 font-light">With TowneSquare you get</p>
+                    <div className="py-4">
+                      <h1 className="text-3xl">Identity freedom</h1>
+                      <img
+                        src="/images/financial_img.png"
+                        alt="financial_image"
+                      />
+                    </div>
+                    <p className="font-light leading-6 lg:text-xl">
+                      Embrace the power to shape and{" "}
+                      <p>cultivate your unique identity and </p>{" "}
+                      <p> persona. Own your verifable history </p>{" "}
+                      <p> records, securely stored on decentralized</p>
+                      <p>ledgers, empowering you to define and </p>{" "}
+                      <p> express yourself authentically.</p>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
