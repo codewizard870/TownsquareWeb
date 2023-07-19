@@ -40,8 +40,7 @@ function Screen4() {
       onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
-          node.style.opacity = 1 - self.progress;
-          node.style.transform = `translate(calc(-80vw - ${50 * self.progress}vw), ${50 * self.progress}vh)`
+          node.style.transform = `translate(-80vw, ${-50 * self.progress}vh)`
         }
       },
     });
@@ -53,8 +52,7 @@ function Screen4() {
       onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
-          node.style.opacity = 1 - self.progress;
-          node.style.transform = `translate(calc(-75vw - ${50 * self.progress}vw), ${50 * self.progress}vh)`
+          node.style.transform = `translate(-75vw, ${-50 * self.progress}vh)`
         }
       },
     });
