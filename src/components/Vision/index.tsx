@@ -87,13 +87,13 @@ function Vision() {
                 <div className="relative flex items-center justify-center w-screen h-screen text-white bg-black left-100 lg:bg-transparent font-Outfit">
                   <div className="flex items-center justify-center h-full">
                     <div className="flex flex-col items-center justify-center intro">
-                      <p className="text-[48px] text-center font-Outfit font-medium ">
+                      <p className="md:text-[48px] text-[40px] text-center font-Outfit font-medium ">
                         We want to put the power of Web3 in
                       </p>
-                      <p className="text-[48px] text-center font-Outfit font-medium ">
+                      <p className="md:text-[48px] text-[40px] text-center font-Outfit font-medium ">
                         the hands of billons, so we created
                       </p>
-                      <p className="text-[48px] text-center font-Outfit font-medium ">
+                      <p className="md:text-[48px] text-[40px] text-center font-Outfit font-medium ">
                         {" "}
                         TowneSquare
                       </p>
@@ -110,10 +110,13 @@ function Vision() {
               <div className="z-[50] bg-no-repeat bg-cover bg-L3">
                 <div className="flex items-center justify-center w-screen h-screen envision">
                   <div className="text-center">
-                    <p className="text-2xl text-center text-white">
+                    <p className="text-[32px] text-center text-white">
                       Envision a future where everyone has
                     </p>
-                    <Reveal repeat>
+                    <h1  className="md:text-[48px] text-[40px] font-Outfit font-medium">
+                      finance, informational ,and identity freedom
+                    </h1>
+                    {/* <Reveal repeat>
                       <Tween
                         from={{ color: "#FFF" }}
                         to={{ color: "#FFF" }}
@@ -123,7 +126,7 @@ function Vision() {
                         <SplitChars
                           wrapper={
                             <h1
-                              className="text-[38px] font-Outfit font-medium"
+                              className="md:text-[48px] font-Outfit font-medium"
                               style={{ display: "inline-block" }}
                             />
                           }
@@ -131,7 +134,7 @@ function Vision() {
                           finance, informational ,and identity freedom
                         </SplitChars>
                       </Tween>
-                    </Reveal>
+                    </Reveal> */}
                   </div>
                 </div>
               </div>
@@ -147,13 +150,13 @@ function Vision() {
                   <div>
                     <p className="py-2 font-light">With TowneSquare you get</p>
                     <div className="py-4">
-                      <h1 className="text-3xl ">Financial freedom</h1>
+                      <h1 className="md:text-[40px] text-[30px] font-bold ">Financial freedom</h1>
                       <img
-                        src="/images/financial_img.png"
+                        src="/images/financial_img.svg"
                         alt="financial_image"
                       />
                     </div>
-                    <p className="font-light leading-6 lg:text-xl">
+                    <p className="font-normal text-[18px] leading-6 md:text-[22px]">
                       Don't like centralized institutions or other third{" "}
                       <p>parties mess with your finance? Neither do we</p>
                       <p> Liberate yourself and seize limitless financial</p>
@@ -174,13 +177,13 @@ function Vision() {
                   <div>
                     <p className="py-2 font-light">With TowneSquare you get</p>
                     <div className="py-4">
-                      <h1 className="text-3xl ">Informational freedom</h1>
+                      <h1 className="md:text-[40px] text-[30px] font-bold ">Informational freedom</h1>
                       <img
-                        src="/images/financial_img.png"
+                        src="/images/financial_img.svg"
                         alt="financial_image"
                       />
                     </div>
-                    <p className="font-light leading-6 lg:text-xl">
+                    <p className="font-normal text-[18px] leading-6 md:text-[22px]">
                       Ignite the flow of information and ideas{" "}
                       <p>in a public town square, governed by</p>
                       <p> user-defined rules, liberated from the </p>
@@ -203,13 +206,13 @@ function Vision() {
                   <div>
                     <p className="py-2 font-light">With TowneSquare you get</p>
                     <div className="py-4">
-                      <h1 className="text-3xl">Identity freedom</h1>
+                      <h1 className="md:text-[40px] text-[30px] font-bold">Identity freedom</h1>
                       <img
-                        src="/images/financial_img.png"
+                        src="/images/financial_img.svg"
                         alt="financial_image"
                       />
                     </div>
-                    <p className="font-light leading-6 lg:text-xl">
+                    <p className="font-normal text-[18px] leading-6 md:text-[22px]">
                       Embrace the power to shape and{" "}
                       <p>cultivate your unique identity and </p>{" "}
                       <p> persona. Own your verifable history </p>{" "}
