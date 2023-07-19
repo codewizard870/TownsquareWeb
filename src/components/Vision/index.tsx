@@ -156,7 +156,7 @@ function Vision() {
                         alt="financial_image"
                       />
                     </div>
-                    <p className="font-normal text-[18px] leading-6 md:text-[22px]">
+                    <p className="font-normal text-[18px] leading-[30px] md:leading-[34px] md:text-[22px]">
                       Don't like centralized institutions or other third{" "}
                       <p>parties mess with your finance? Neither do we</p>
                       <p> Liberate yourself and seize limitless financial</p>
@@ -183,7 +183,7 @@ function Vision() {
                         alt="financial_image"
                       />
                     </div>
-                    <p className="font-normal text-[18px] leading-6 md:text-[22px]">
+                    <p className="font-normal text-[18px] leading-[30px] md:leading-[34px]  md:text-[22px]">
                       Ignite the flow of information and ideas{" "}
                       <p>in a public town square, governed by</p>
                       <p> user-defined rules, liberated from the </p>
@@ -212,7 +212,7 @@ function Vision() {
                         alt="financial_image"
                       />
                     </div>
-                    <p className="font-normal text-[18px] leading-6 md:text-[22px]">
+                    <p className="font-normal text-[18px] leading-[30px] md:leading-[34px] md:text-[22px]">
                       Embrace the power to shape and{" "}
                       <p>cultivate your unique identity and </p>{" "}
                       <p> persona. Own your verifable history </p>{" "}
