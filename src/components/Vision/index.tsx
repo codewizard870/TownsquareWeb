@@ -26,7 +26,6 @@ function Vision() {
     if (intro !== undefined) {
       setFirst(intro * 2);
     }
-    // console.log(intro);
     scrollSection?.setAttribute(
       "style",
       `transform:translate3d(${-percentage}vw, 0, 0)`
@@ -34,7 +33,6 @@ function Vision() {
   };
 
   window.addEventListener("scroll", (e) => {
-    // console.log(window.scrollY, first);
     transform();
   });
 

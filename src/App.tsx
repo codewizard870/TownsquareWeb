@@ -32,9 +32,9 @@ function App() {
       });
       const visibleComponent = positions.find((position) => {
         if(position && position?.name == "Introduction") {
-          return position && (position.top <= scrollY + windowHeight / 2 && position.bottom >= scrollY + windowHeight / 2) && position.right <= windowWidth / 2 && position.right >= 0;
+          return position && (position.top <= scrollY + windowHeight / 2 && position.bottom >= scrollY + windowHeight / 2) && position.right <= windowWidth && position.right >= windowWidth/3;
         } else if(position && position?.name == "Vision") {
-          return position && (position.top <= scrollY + windowHeight / 2 && position.bottom >= scrollY + windowHeight / 2) && (position.right > windowWidth / 2 || position.right > windowWidth*-3 );
+          return position && (position.top <= scrollY + windowHeight / 2 && position.bottom >= scrollY + windowHeight / 2) && (position.right > windowWidth / 3 || position.right > windowWidth*-3 );
         } else if(position) {
           return position && position.top <= scrollY + windowHeight / 2 && position.bottom >= scrollY + windowHeight / 2;
         }
@@ -57,12 +57,10 @@ function App() {
     <div>
       <Header/>
       <Home/>
-      <div className='relative'>
-        <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} />
-        <Vision />
-        <Features />
-        <EarlyAccess />
-      </div>
+      <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} />
+      <Vision />
+      <Features />
+      <EarlyAccess />
       <Footer/>
     </div>
   );
