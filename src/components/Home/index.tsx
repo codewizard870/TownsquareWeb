@@ -18,20 +18,20 @@ const Home = () => {
       className="relative bg-black"
       onMouseMove={(e) => onMouseMove(e)}
     >
-      <div className="absolute z-0 w-full  hidden lg:block">
+      <div className="absolute z-0 hidden w-full lg:block">
         <img src="/images/home/left_web.svg" alt="background" className="top-0 left-0" />
         <img src="/images/home/right_web.svg" alt="background" className="absolute top-0 right-0" />
       </div>
-      <div className="absolute z-0 w-full  hidden md:block lg:hidden">
+      <div className="absolute z-0 hidden w-full md:block lg:hidden">
         <img src="/images/home/left_tablet.svg" alt="background" className="top-0 left-0" />
         <img src="/images/home/right_tablet.svg" alt="background" className="absolute top-[40vh] right-0" />
       </div>
-      <div className="absolute z-0 w-full  block md:hidden">
+      <div className="absolute z-0 block w-full md:hidden">
         <img src="/images/home/left_mobile.svg" alt="background" className="top-0 left-0" />
         <img src="/images/home/right_mobile.svg" alt="background" className="absolute top-[20vh] right-0" />
       </div>
-      <div className="pt-24 lg:pt-32 pb-8 lg:pb-48 relative z-10">
-        <div className="flex flex-col-reverse md:flex-row-reverse lg:flex-row gap-8 lg:gap-32 items-center justify-center px-4">
+      <div className="relative z-10 pt-24 pb-8 lg:pt-32 lg:pb-48">
+        <div className="flex flex-col-reverse items-center justify-center gap-8 px-4 md:flex-row-reverse lg:flex-row lg:gap-32">
           <div className="flex flex-col gap-6 max-w-[800px] md:pr-10 lg:pr-0">
             <span className="text-[40px] md:text-[48px] lg:text-[56px] font-bold">
               <span className="text-[#00EEFD]">The Web3 ”everything” app</span>
@@ -76,7 +76,7 @@ const Home = () => {
           <div className="flex items-center justify-center min-w-[300px] relative">
             <img
               src="/images/home/glass.svg" alt="glass"
-              className="absolute -right-2 -top-2 ease-in"
+              className="absolute ease-in -right-2 -top-2"
               style={{
                 left: offset.left,
                 top: offset.top
