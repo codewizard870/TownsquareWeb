@@ -15,6 +15,7 @@ function App() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
+      const windowWidth = window.innerWidth;
       const positions = components.map((component) => {
         const element = document.querySelector(`[data-component="${component}"]`);
         if (element) {
@@ -23,15 +24,21 @@ function App() {
             name: component,
             top: rect.top + scrollY,
             bottom: rect.bottom + scrollY,
+            left: rect.left,
+            right: rect.right
           };
         }
         return null;
       });
-
       const visibleComponent = positions.find((position) => {
-        return position && position.top <= scrollY + windowHeight / 2 && position.bottom >= scrollY + windowHeight / 2;
+        if(position && position?.name == "Introduction") {
+          return position && (position.top <= scrollY + windowHeight / 2 && position.bottom >= scrollY + windowHeight / 2) && position.right <= windowWidth / 2 && position.right >= 0;
+        } else if(position && position?.name == "Vision") {
+          return position && (position.top <= scrollY + windowHeight / 2 && position.bottom >= scrollY + windowHeight / 2) && (position.right > windowWidth / 2 || position.right > windowWidth*-3 );
+        } else if(position) {
+          return position && position.top <= scrollY + windowHeight / 2 && position.bottom >= scrollY + windowHeight / 2;
+        }
       });
-
       if (visibleComponent) {
         setCurrentComponent(visibleComponent.name);
       } else {
