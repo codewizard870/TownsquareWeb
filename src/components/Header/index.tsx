@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsTwitter, BsGithub } from "react-icons/bs";
+import { BsTwitter, BsGithub, BsGit } from "react-icons/bs";
 import { images } from '../../constants/images';
 import { ScrollTrigger, Tween } from 'react-gsap';
 
@@ -39,6 +39,16 @@ function Header() {
         <div className="w-6 md:w-8 h-6 md:h-8">
           <a href="https://github.com/TowneSquare">
             <BsGithub
+              size="auto"
+              style={{
+                color: "#F2F0FF",
+              }}
+            />
+          </a>
+        </div>
+        <div className="w-6 md:w-8 h-6 md:h-8">
+          <a href="https://docs.townesquare.xyz/townesquare-whitepaper/">
+            <BsGit
               size="auto"
               style={{
                 color: "#F2F0FF",
