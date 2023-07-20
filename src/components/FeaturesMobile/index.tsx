@@ -15,7 +15,7 @@ import Screen7 from './screen7';
 import Screen8 from './screen8';
 gsap.registerPlugin(ScrollTrigger);
 
-function Features() {
+function FeaturesMobile() {
   const [offset, setOffset] = useState(700);
 
   useEffect(() => {
@@ -34,20 +34,20 @@ function Features() {
   }, []);
 
   return (
-    <div className="bg-black hidden md:block lg:block" id="feature">
+    <div className="bg-black md:hidden" id="feature">
       <Controller>
-        <Scene duration={5000} pin offset={`${offset}px`}>
+        <Scene duration={1000} pin>
           <div className="w-full relative">
             <BackgroundRight />
             <Screen1 />
-            <Screen2 />
+            {/* <Screen2 />
             <Screen3 />
             <Screen4 />
             <Splin />
             <Screen5 />
             <Screen6 />
             <Screen7 />
-            <Screen8 />
+            <Screen8 /> */}
           </div>
         </Scene>
       </Controller>
@@ -55,4 +55,4 @@ function Features() {
   )
 };
 
-export default Features
+export default FeaturesMobile
