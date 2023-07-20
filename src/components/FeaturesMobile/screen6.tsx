@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
-function Spline1() {
+
+function Screen6() {
   const ref1 = useRef(null);
 
   useEffect(() => {
@@ -12,10 +13,11 @@ function Spline1() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          node.style.transform = `translate(${50 * self.progress}vw, ${10 * self.progress}vh)`
+          node.style.transform = `translate(calc(-50% - ${100 * self.progress}vw), -50%)`
         }
       },
     });
+
     ScrollTrigger.create({
       trigger: "#feature",
       start: "top top+=-3900px",
@@ -23,18 +25,7 @@ function Spline1() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          node.style.transform = `translate(calc(50vw - ${30 * self.progress}vw), 10vh)`
-        }
-      },
-    });
-    ScrollTrigger.create({
-      trigger: "#feature",
-      start: "top top+=-4500px",
-      end: "top top+=-4800px",
-      onUpdate: (self) => {
-        if (ref1.current != null && (ref1.current as any).style != null) {
-          let node = ref1.current as any;
-          node.style.transform = `translate(calc(20vw + ${30 * self.progress}vw), calc(10vh - ${10 * self.progress}vh))`
+          node.style.transform = `translate(calc(-50% - 100vw - ${100 * self.progress}vw), -50%)`
         }
       },
     });
@@ -43,10 +34,13 @@ function Spline1() {
   }, []);
 
   return (
-    <img ref={ref1} src="/images/features/spline1.svg" alt='spline1' className="absolute"
-      style={{ left: "-50%", top: "-5%" }}
-    />
+    <div ref={ref1} className="absolute w-[740px] -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center" style={{ left: "150vw", top: `50vh` }}>
+      <img src="/images/features/feature7.svg" alt='feature7' />
+      <span className="text-[32px] font-medium text-center">
+        Discover new friends, communities, creators, <br />and on-chain items based on your interests
+      </span>
+    </div>
   )
 }
 
-export default Spline1
+export default Screen6

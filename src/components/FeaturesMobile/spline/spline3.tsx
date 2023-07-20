@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
-function Spline1() {
+function Spline3() {
   const ref1 = useRef(null);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ function Spline1() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          node.style.transform = `translate(${50 * self.progress}vw, ${10 * self.progress}vh)`
+          node.style.transform = `translate(0, ${100 * self.progress}vh)`
         }
       },
     });
@@ -23,18 +23,7 @@ function Spline1() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          node.style.transform = `translate(calc(50vw - ${30 * self.progress}vw), 10vh)`
-        }
-      },
-    });
-    ScrollTrigger.create({
-      trigger: "#feature",
-      start: "top top+=-4500px",
-      end: "top top+=-4800px",
-      onUpdate: (self) => {
-        if (ref1.current != null && (ref1.current as any).style != null) {
-          let node = ref1.current as any;
-          node.style.transform = `translate(calc(20vw + ${30 * self.progress}vw), calc(10vh - ${10 * self.progress}vh))`
+          node.style.transform = `translate(${20 * self.progress}vw, 100vh)`
         }
       },
     });
@@ -43,10 +32,10 @@ function Spline1() {
   }, []);
 
   return (
-    <img ref={ref1} src="/images/features/spline1.svg" alt='spline1' className="absolute"
-      style={{ left: "-50%", top: "-5%" }}
+    <img ref={ref1} src="/images/features/spline3.svg" alt='spline3' className="absolute"
+      style={{ right: "0", top: "-100%" }}
     />
   )
 }
 
-export default Spline1
+export default Spline3
