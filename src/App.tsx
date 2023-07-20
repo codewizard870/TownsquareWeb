@@ -6,6 +6,7 @@ import Features from './components/Features';
 import EarlyAccess from './components/EarlyAccess';
 import { Footer } from './components/Footer';
 import RightPanelMenu from './components/RightPanel';
+import FeaturesMobile from './components/FeaturesMobile';
 
 function App() {
   const [currentComponent, setCurrentComponent] = useState<string | null>(null);
@@ -60,6 +61,7 @@ function App() {
       <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} />
       <Vision />
       <Features />
+      <FeaturesMobile />
       <EarlyAccess />
       <Footer/>
     </div>
