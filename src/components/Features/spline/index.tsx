@@ -3,6 +3,8 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Spline1 from './spline1';
 import Spline2 from './spline2';
 import Spline3 from './spline3';
+import Text1 from './text1';
+import Text2 from './text2';
 
 function Splin() {
   const ref1 = useRef(null);
@@ -37,6 +39,8 @@ function Splin() {
       <Spline1 />
       <Spline2 />
       <Spline3 />
+      <Text1 />
+      <Text2 />
     </div>
   )
 }

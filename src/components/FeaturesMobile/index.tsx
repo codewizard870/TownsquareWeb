@@ -25,7 +25,7 @@ function FeaturesMobile() {
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
-      console.log("position=", position)
+      // console.log("position=", position)
     };
     window.addEventListener('scroll', handleScroll);
     return () => {
