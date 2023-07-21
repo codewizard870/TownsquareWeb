@@ -13,6 +13,7 @@ function App() {
   const [currentComponent, setCurrentComponent] = useState<string | null>(null);
   const components = ['Home', 'Introduction', 'Vision', 'Features', 'Early'];
   const [isTransparencyVisible, setIsTransparencyVisible] =  useState(false);
+  const [isJoinAppear, setIsJoinAppear] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,12 +59,13 @@ function App() {
 
   const handleClick = () => {
     setIsTransparencyVisible(!isTransparencyVisible);
+    setIsJoinAppear(true);
   }
 
   return (
     <div>
       <Header clickWaitlist={handleClick}/>
-      <Transparency isVisible={isTransparencyVisible} onClose={handleClick}/>
+      <Transparency isJoinAppear={isJoinAppear} isVisible={isTransparencyVisible} onClose={handleClick}/>
       <Home clickWaitlist={handleClick}/>
       <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} />
       <Vision />
