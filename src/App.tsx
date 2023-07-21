@@ -6,10 +6,14 @@ import Features from './components/Features';
 import EarlyAccess from './components/EarlyAccess';
 import { Footer } from './components/Footer';
 import RightPanelMenu from './components/RightPanel';
+import FeaturesMobile from './components/FeaturesMobile';
+import Transparency from './components/Transparency';
 
 function App() {
   const [currentComponent, setCurrentComponent] = useState<string | null>(null);
   const components = ['Home', 'Introduction', 'Vision', 'Features', 'Early'];
+  const [isTransparencyVisible, setIsTransparencyVisible] =  useState(false);
+  const [isJoinAppear, setIsJoinAppear] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,13 +57,20 @@ function App() {
     };
   }, []);
 
+  const handleClick = () => {
+    setIsTransparencyVisible(!isTransparencyVisible);
+    setIsJoinAppear(true);
+  }
+
   return (
     <div>
-      <Header/>
-      <Home/>
+      <Header clickWaitlist={handleClick}/>
+      <Transparency isJoinAppear={isJoinAppear} isVisible={isTransparencyVisible} onClose={handleClick}/>
+      <Home clickWaitlist={handleClick}/>
       <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} />
       <Vision />
       <Features />
+      <FeaturesMobile />
       <EarlyAccess />
       <Footer/>
     </div>

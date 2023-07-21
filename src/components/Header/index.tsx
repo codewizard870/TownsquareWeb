@@ -3,7 +3,11 @@ import { BsTwitter, BsGithub, BsGit } from "react-icons/bs";
 import { images } from '../../constants/images';
 import { ScrollTrigger, Tween } from 'react-gsap';
 
-function Header() {
+type HeaderProps = {
+  clickWaitlist: () => void;
+};
+
+const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   return (
     <div
       className="w-full px-6 py-4 z-20 fixed flex justify-between"
@@ -58,6 +62,7 @@ function Header() {
         </div>
         <button
           className="hidden md:block px-6 py-2 text-[18px] text-black font-semibold bg-white hover:bg-[#CCCCCC] active:bg-[#AAAAAA] rounded-full cursor-pointer"
+          onClick={clickWaitlist}
         >
           Join waitlist
         </button>

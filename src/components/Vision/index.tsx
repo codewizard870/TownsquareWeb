@@ -10,22 +10,25 @@ import {
 let percentage = 0;
 
 function Vision() {
-  const [first, setFirst] = useState<undefined | number>(0);
-  const [second, setSecond] = useState<undefined | number>(0);
+  // const [first, setFirst] = useState<undefined | number>(0);
+  // const [second, setSecond] = useState<undefined | number>(0);
   const transform = () => {
     const sticky = document.querySelector(".sticky_2");
     const offSetTop = sticky?.parentElement?.offsetTop;
     const scrollSection = sticky?.querySelector(".scroll_section");
     let value = 0;
+
     if (offSetTop !== undefined) {
       value = ((window.scrollY - offSetTop) / window.innerHeight) * 100;
       percentage = value < 0 ? 0 : value > 400 ? 400 : value;
+      console.log(window.scrollY, offSetTop, window.innerWidth, window.innerHeight, percentage)
     }
 
-    const intro = document.querySelector(".intro")?.parentElement?.offsetWidth;
-    if (intro !== undefined) {
-      setFirst(intro * 2);
-    }
+    // const intro = document.querySelector(".intro")?.parentElement?.offsetWidth;
+    // if (intro !== undefined) {
+    //   setFirst(intro * 2);
+    // }
+  
     scrollSection?.setAttribute(
       "style",
       `transform:translate3d(${-percentage}vw, 0, 0)`
@@ -38,8 +41,8 @@ function Vision() {
 
   return (
     <div className="h-full bg-black bg-right-bottom bg-no-repeat bg-contain scroll-smooth lg:bg-vision-bg">
-      <div className="h-[700vh]">
-        <ScrollTrigger start="800px" end="1200px" scrub={0.5}>
+      <div className="h-[550vh]">
+        <ScrollTrigger start="800px" end="900px" scrub={0.5}>
           <div className="sticky sticky_2 overflow-hidden top-0 h-[100vh]">
             <Tween
               from={{
