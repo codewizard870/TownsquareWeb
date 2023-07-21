@@ -1,8 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
-
-function Screen6() {
+function Text1() {
   const ref1 = useRef(null);
 
   useEffect(() => {
@@ -13,11 +12,10 @@ function Screen6() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          node.style.transform = `translate(calc(-50% - ${100 * self.progress}vw), -50%)`
+          node.style.transform = `translate(${110 * self.progress}vw, 10vh)`
         }
       },
     });
-
     ScrollTrigger.create({
       trigger: "#feature",
       start: "top top+=-3900px",
@@ -25,7 +23,18 @@ function Screen6() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          node.style.transform = `translate(calc(-50% - 100vw - ${100 * self.progress}vw), -50%)`
+          node.style.transform = `translate(calc(110vw + ${10 * self.progress}vw), 10vh)`
+        }
+      },
+    });
+    ScrollTrigger.create({
+      trigger: "#feature",
+      start: "top top+=-4500px",
+      end: "top top+=-4800px",
+      onUpdate: (self) => {
+        if (ref1.current != null && (ref1.current as any).style != null) {
+          let node = ref1.current as any;
+          node.style.transform = `translate(calc(120vw + ${10 * self.progress}vw), 10vh)`
         }
       },
     });
@@ -34,13 +43,10 @@ function Screen6() {
   }, []);
 
   return (
-    <div ref={ref1} className="absolute w-[740px] -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center" style={{ left: "150vw", top: `50vh` }}>
-      <img src="/images/features/feature7.svg" alt='feature7' />
-      <span className="text-[32px] font-medium text-center pt-10">
-        Discover new friends, communities, creators, <br />and on-chain items based on your interests
-      </span>
-    </div>
+    <img ref={ref1} src="/images/text_own.svg" alt='text_own' className="fixed"
+      style={{ left: "-60%", top: "30%" }}
+    />
   )
 }
 
-export default Screen6
+export default Text1
