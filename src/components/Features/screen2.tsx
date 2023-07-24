@@ -1,5 +1,6 @@
-import React, { useRef, useEffect, useState } from 'react';
+ import React, { useRef, useEffect, useState } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
 
 function Screen2() {
   const ref1 = useRef(null);
@@ -12,7 +13,6 @@ function Screen2() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          // node.style.opacity = self.progress;
           node.style.transform = `translate(calc(-50% - ${100 * self.progress}vw), -50%)`
         }
       },
@@ -20,13 +20,12 @@ function Screen2() {
     
     ScrollTrigger.create({
       trigger: "#feature",
-      start: "top top+=-1500px",
+       start: "top top+=-1500px",
       end: "top top+=-1800px",
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          
-          node.style.transform = `translate(calc(-50% - 100vw - ${50 * self.progress}vw), calc(-50% + ${50 * self.progress}vh))`
+          node.style.transform = `translate(calc(-50% - 100vw - ${50 * self.progress}vw), calc(-50% + ${100 * self.progress}vh))`
         }
       },
     });
@@ -36,7 +35,7 @@ function Screen2() {
 
   return (
     <div ref={ref1} className="absolute flex items-center gap-32 -translate-x-1/2 -translate-y-1/2"
-    style={{ left: "150vw", top: `50vh`, minWidth: "1000px" }}
+      style={{ left: "150vw", top: `50vh`, minWidth: "1000px" }}
     >
       <img src="/images/features/feature2.svg" alt='feature2' className="min-w-[300px]" />
       <div>
