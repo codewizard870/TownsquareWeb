@@ -1,0 +1,25 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 2153" width="500" height="2153">
+	<title>right_web-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m69 44h478v2109h-478z"/>
+		</clipPath>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp2">
+			<path d="m0 0h547v2150h-547z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #5e409e } 
+		.s1 { fill: none;stroke: #ffffff;stroke-width: 3 } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+			<path id="Layer" class="s0" d="m69 543.3c0-625.3 678.5-474 664.9-507.3l183.3 321-34.8 1941c-210-54-553.1-259.7-598-630-24-198-5-275.6 86.7-588.8 77.9-266.2 97.6-391.1 37.1-463.5-57-56.5-159.4 20.7-242.5 72.4-83.1 51.8-96.7-84.9-96.7-144.8z"/>
+		</g>
+	</g>
+	<g id="Clip-Path" clip-path="url(#cp2)">
+		<g id="Layer">
+			<path id="Layer" fill-rule="evenodd" class="s1" d="m0 507.3c0-625.3 677.7-474 664.1-507.3l183.1 321-34.8 1941c-209.7-54-552.4-259.7-597.3-630-24-198-4.9-275.6 86.6-588.8 77.8-266.2 97.5-391.1 37.1-463.5-56.9-56.5-159.2 20.7-242.2 72.4-83 51.8-96.6-84.9-96.6-144.8z"/>
+		</g>
+	</g>
+</svg>
