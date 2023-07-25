@@ -32,10 +32,27 @@ function Splin() {
         }
       },
     });
+    ScrollTrigger.create({
+      trigger: "#feature",
+      start: "top top+=-4900px",
+      end: "top top+=-5450px",
+      onUpdate: (self) => {
+        if (ref1.current != null && (ref1.current as any).style != null) {
+          let node = ref1.current as any;
+          node.style.clipPath = `polygon(
+            calc(30vw + ${10 * self.progress}vw) 0, 
+            calc(130vw - ${10 * self.progress}vw) 0,
+            calc(130vw - ${10 * self.progress}vw) 100%,
+            calc(30vw + ${10 * self.progress}vw) 100%
+          )`;
+        }
+      },
+    });
+
   }, []);
 
   return (
-    <div ref={ref1} className="w-[130vw] h-[130vh] overflow-hidden absolute bg-[#5E409E] rounded-3xl" style={{ left: "10vw", top: "100vh", transform: "translate(0px, 0vh)" }}>
+    <div ref={ref1} className="w-[160vw] h-[130vh] overflow-hidden absolute bg-[#5E409E] rounded-3xl" style={{ left: "10vw", top: "100vh", transform: "translate(0px, 0vh)" }}>
       <Spline1 />
       <Spline2 />
       <Spline3 />
