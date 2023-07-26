@@ -13,6 +13,7 @@ import Splin from './spline';
 import Screen6 from './screen6';
 import Screen7 from './screen7';
 import Screen8 from './screen8';
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Features() {
@@ -22,32 +23,23 @@ function Features() {
     setOffset(window.innerHeight / 2);
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.scrollY;
-      // console.log("position=", position)
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <div className="features component bg-black hidden md:block lg:block overflow-hidden" id="feature" data-component="Features">
+    <div className="features component bg-black hidden md:block lg:block" id="feature" data-component="Features">
       <Controller>
         <Scene duration={5000} pin offset={`${offset}px`}>
-          <div className="w-full relative">
+          <div className="relative w-full">
             <BackgroundRight />
-            <Screen1 />
-            <Screen2 />
-            <Screen3 />
-            <Screen4 />
-            <Splin />
-            <Screen5 />
-            <Screen6 />
-            <Screen7 />
-            <Screen8 />
+            <div className="w-full h-[1000vh] relative overflow-hidden">
+              <Screen1 />
+              <Screen2 />
+              <Screen3 />
+              <Screen4 />
+              <Splin />
+              <Screen5 />
+              <Screen6 />
+              <Screen7 />
+              <Screen8 />
+            </div>
           </div>
         </Scene>
       </Controller>
