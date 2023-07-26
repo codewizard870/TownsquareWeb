@@ -13,6 +13,7 @@ import Splin from './spline';
 import Screen6 from './screen6';
 import Screen7 from './screen7';
 import Screen8 from './screen8';
+import BackgroundText from './background_text';
 gsap.registerPlugin(ScrollTrigger);
 
 function Features() {
@@ -34,10 +35,10 @@ function Features() {
   }, []);
 
   return (
-    <div className="bg-black hidden md:block lg:block" id="feature">
+    <div className="hidden bg-black md:block lg:block" id="feature">
       <Controller>
         <Scene duration={5000} pin offset={`${offset}px`}>
-          <div className="w-full relative">
+          <div className="relative w-full">
             <BackgroundRight />
             <Screen1 />
             <Screen2 />
@@ -45,6 +46,7 @@ function Features() {
             <Screen4 />
             <Splin />
             <Screen5 />
+            <BackgroundText/>
             <Screen6 />
             <Screen7 />
             <Screen8 />
