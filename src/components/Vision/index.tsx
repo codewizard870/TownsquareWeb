@@ -10,17 +10,23 @@ import {
 let percentage = 0;
 
 function Vision() {
- 
+  // const [first, setFirst] = useState<undefined | number>(0);
+  // const [second, setSecond] = useState<undefined | number>(0);
   const transform = () => {
     const sticky = document.querySelector(".sticky_2");
     const offSetTop = sticky?.parentElement?.offsetTop;
     const scrollSection = sticky?.querySelector(".scroll_section");
     let value = 0;
+
     if (offSetTop !== undefined) {
       value = ((window.scrollY - offSetTop) / window.innerHeight) * 100;
       percentage = value < 0 ? 0 : value > 400 ? 400 : value;
+      console.log(window.scrollY, offSetTop, window.innerWidth, window.innerHeight, percentage)
     }
-
+    // const intro = document.querySelector(".intro")?.parentElement?.offsetWidth;
+    // if (intro !== undefined) {
+    //   setFirst(intro * 2);
+    // }
     scrollSection?.setAttribute(
       "style",
       `transform:translate3d(${-percentage}vw, 0, 0)`
