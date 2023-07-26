@@ -13,7 +13,7 @@ import Splin from './spline';
 import Screen6 from './screen6';
 import Screen7 from './screen7';
 import Screen8 from './screen8';
-import BackgroundText from './background_text';
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Features() {
@@ -46,7 +46,6 @@ function Features() {
             <Screen4 />
             <Splin />
             <Screen5 />
-            <BackgroundText/>
             <Screen6 />
             <Screen7 />
             <Screen8 />
