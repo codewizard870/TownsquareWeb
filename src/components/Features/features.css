@@ -2,6 +2,6 @@
   background:black;
   width: 100%;
 }
-.features-wrapper .scrollmagic-pin-spacer:first-child {
-  /* padding-bottom: 1300px !important; */
+.features-wrapper > .scrollmagic-pin-spacer:first-child {
+  padding-bottom: 1300px !important;
 }

@@ -25,7 +25,7 @@ function Screen3() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          node.style.transform = `translate(calc(-50% - 100vw - ${50 * self.progress}vw), calc(-50% + ${100 * self.progress}vh))`
+          node.style.transform = `translate(calc(-50% - 100vw - ${100 * self.progress}vw), calc(-50% + ${100 * self.progress}vh))`
         }
       },
     });
