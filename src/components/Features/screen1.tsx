@@ -89,10 +89,10 @@ function Screen1() {
       <div ref={ref3} className="absolute w-[500px] opacity-0 -translate-x-1/2 -translate-y-1/2"
         style={{ left: `100vw`, top: `50vh` }}
       >
-        <h1 className="text-[40px] font-bold">
-          Contextual social feed
+        <h1 className="text-[40px] leading-[50px] font-bold">
+          One-click community onboarding
         </h1>
-        <span className="text-2xl">
+        <span className="flex flex-col self-stretch text-base sm:text-xl md:text-2xl lg:text-2xl font-[Outfit] font-normal leading-[24px] sm:leading-[30px] md:leading-[34px] text-white mt-4 mb-16">
           TowneSquare feed enables context-specific features for each post to maximize utility for viewers. Users can seamlessly transition between finance and social experience in one user-friendly feed.
         </span>
       </div>
