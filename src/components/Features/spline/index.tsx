@@ -17,7 +17,8 @@ function Splin() {
       onUpdate: (self) => {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
-          node.style.transform = `translate(0, ${-50 * self.progress}vh)`
+          node.style.transform = `translate(0, ${-50 * self.progress}vh)`;
+          node.style.clipPath = ``;
         }
       },
     });
@@ -29,6 +30,7 @@ function Splin() {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
           node.style.transform = `translate(${-40 * self.progress}vw, calc(-50vh - ${80 * self.progress}vh))`
+          node.style.clipPath = ``;
         }
       },
     });
@@ -52,7 +54,11 @@ function Splin() {
   }, []);
 
   return (
-    <div ref={ref1} className="w-[160vw] h-[130vh] overflow-hidden absolute bg-[#5E409E] rounded-3xl" style={{ left: "10vw", top: "100vh", transform: "translate(0px, 0vh)" }}>
+    <div ref={ref1} className="w-[160vw] h-[130vh] overflow-hidden absolute bg-[#5E409E] rounded-3xl"
+      style={{
+        left: "10vw", top: "100vh", transform: "translate(0px, 0vh)"
+      }}
+    >
       <Spline1 />
       <Spline2 />
       <Spline3 />

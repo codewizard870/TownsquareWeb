@@ -29,7 +29,7 @@ function Features() {
         <Scene duration={5000} pin offset={`${offset}px`}>
           <div className="relative w-full">
             <BackgroundRight />
-            <div className="w-full h-[1000vh] relative overflow-hidden">
+            <div className="w-full h-[100vh] relative overflow-hidden">
               <Screen1 />
               <Screen2 />
               <Screen3 />
