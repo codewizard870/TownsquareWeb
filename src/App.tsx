@@ -70,7 +70,7 @@ function App() {
       <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} />
       <Vision />
       <Features />
-      <FeaturesMobile />
+      {/* <FeaturesMobile /> */}
       <EarlyAccess />
       <Footer/>
     </div>
