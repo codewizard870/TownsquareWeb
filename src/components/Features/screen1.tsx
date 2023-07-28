@@ -38,8 +38,7 @@ function Screen1() {
       onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
-          node.style.opacity = self.progress;
-          node.style.transform = `translate(calc(-50% - ${40 * self.progress}vw), -50%)`
+          node.style.transform = `translate(calc(${-120 * self.progress}vw + ${230*self.progress}px), -50%)`
         }
       },
     });
@@ -51,8 +50,7 @@ function Screen1() {
       onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
-          node.style.opacity = 1 - self.progress;
-          node.style.transform = `translate(calc(-50% - 20vw - ${50 * self.progress}vw), calc(-50% - 30vh + ${50 * self.progress}vh))`
+          node.style.transform = `translate(calc(-50% - 20vw - ${100 * self.progress}vw), calc(-50% - 30vh + ${100 * self.progress}vh))`
         }
       },
     });
@@ -63,8 +61,7 @@ function Screen1() {
       onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
-          node.style.opacity = 1 - self.progress;
-          node.style.transform = `translate(calc(-50% - 40vw - ${50 * self.progress}vw), calc(-50% + ${50 * self.progress}vh))`
+          node.style.transform = `translate(calc(-120vw + 230px - ${100 * self.progress}vw), calc(-50% + ${100 * self.progress}vh))`
         }
       },
     });
@@ -86,8 +83,8 @@ function Screen1() {
       <img ref={ref2} src="/images/features/feed.svg" alt='feature1' className="absolute w-[300px] self-center  -translate-x-1/2 -translate-y-1/2"
         style={{ left: `50vw`, top: `80vh` }}
       />
-      <div ref={ref3} className="absolute w-[500px] opacity-0 -translate-x-1/2 -translate-y-1/2"
-        style={{ left: `100vw`, top: `50vh` }}
+      <div ref={ref3} className="absolute w-[500px] -translate-y-1/2"
+        style={{ left: `150vw`, top: `50vh` }}
       >
         <h1 className="text-[40px] leading-[50px] font-bold">
           One-click community onboarding
