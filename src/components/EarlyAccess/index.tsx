@@ -18,7 +18,7 @@ function EarlyAccess() {
           <img className='max-sm:w-[156px]' src="/images/aptos.svg" alt="aptos_image"/>
         </div>
         <div className='w-full pb-64 lg:flex'>
-          <Marquee autoFill={true}>
+        <Marquee autoFill={true} style={{ overflowY: "hidden" }}>
             <p className='z-10 px-24 pt-24 font-bold text-center text-white font-Outfit text-7xl max-sm:text-5xl'>Let's connect</p>
           </Marquee>
         </div>
