@@ -67,7 +67,7 @@ function Vision() {
                   ~ full control
                 </p>
                 <p className="absolute font-bold opacity-20 top-32 right-px md:top-[33%] lg:top-[69%] lg:left-[48%] md:text-2xl lg:font-medium">
-                  = p2p payment
+                  = P2P payment
                 </p>
                 <p className="absolute font-bold opacity-50 bottom-40 focus-visible:opacity-100 right-4 lg:left-[3%] md:left-[61%] md:bottom-[31%] md:text-2xl lg:font-medium lg:top-[47%]">
                   ~ financial freedom
@@ -90,7 +90,7 @@ function Vision() {
                         We want to put the power of Web3 in
                       </p>
                       <p className="md:text-[48px] text-[40px] text-center font-Outfit font-medium ">
-                        the hands of billons, so we created
+                        the hands of billions, so we created
                       </p>
                       <p className="md:text-[48px] text-[40px] text-center font-Outfit font-medium ">
                         {" "}
