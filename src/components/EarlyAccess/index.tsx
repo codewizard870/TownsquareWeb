@@ -29,7 +29,7 @@ function EarlyAccess() {
             <Waitlist isModel={false}/>
           </div>
           <div className='absolute text-center w-full bottom-[12%]'>
-            <p className="text-[20px] text-center text-white font-Outfit font-bold">Find out more about Townesquare</p>
+            <p className="text-[20px] text-center text-white font-Outfit font-bold">Find out more about TowneSquare</p>
             <div className='flex justify-center pt-6 space-x-8'>
               <a href='https://twitter.com/TowneSquarexyz' target="_blank" rel="noreferrer">
                 <img src="/images/twitter.svg" alt="twitter_image"/>
