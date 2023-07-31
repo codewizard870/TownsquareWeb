@@ -12,15 +12,16 @@ export const Footer = (props: any) => {
           <div>
             <div className="pb-2 text-sm font-semibold text-white font-Outfit">Follow us</div>
             <div className="flex">
-              <a href="https://twitter.com/TowneSquarexyz">
-                <BsTwitter
+              <a className="items-center justify-center pr-3 mt-1 mr-3"href="https://twitter.com/TowneSquarexyz">
+                {/* <BsTwitter
                   size={34}
                   style={{
                     color: "#F2F0FF",
                     paddingRight: "12px",
                     marginRight: "12px",
                   }}
-                />
+                /> */}
+                <img src="/images/sm-twitter.svg" alt="twitter_image"/>
               </a>
               <a href="https://github.com/TowneSquare">
                 <BsGithub
