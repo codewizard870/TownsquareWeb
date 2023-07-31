@@ -113,7 +113,7 @@ function Vision() {
                       Envision a future where everyone has
                     </p>
                     <h1  className="md:text-[48px] text-[40px] font-Outfit font-medium">
-                      finance, informational ,and identity freedom
+                      finance, informational, and identity freedom
                     </h1>
                     {/* <Reveal repeat>
                       <Tween
