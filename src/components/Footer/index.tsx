@@ -2,6 +2,8 @@ import React from "react";
 import { BsGithub } from "react-icons/bs";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
+
 
 export const Footer = (props: any) => {
   return (
@@ -51,7 +53,8 @@ export const Footer = (props: any) => {
             <div className="text-[#CCCCCC] text-sm font-Outfit flex flex-col space-y-2">
               <a href="/termsofservice" target="_blank">Terms of Service</a>
               <a href="/legal" target="_blank">Legal</a>
-              <a href="/privacypolicy" target="_blank">Privacy Policy</a>
+              {/* <a href="/privacypolicy" target="_blank">Privacy Policy</a> */}
+              <Link to="/PrivacyPolicy">Privacy Policy</Link>
             </div>
           </div>
           <div className="flex flex-col space-y-3">
