@@ -21,7 +21,6 @@ function Vision() {
     if (offSetTop !== undefined) {
       value = ((window.scrollY - offSetTop) / window.innerHeight) * 100;
       percentage = value < 0 ? 0 : value > 400 ? 400 : value;
-      console.log(window.scrollY, offSetTop, window.innerWidth, window.innerHeight, percentage)
     }
     // const intro = document.querySelector(".intro")?.parentElement?.offsetWidth;
     // if (intro !== undefined) {
