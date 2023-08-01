@@ -18,7 +18,7 @@ function EarlyAccess() {
           <img className='max-sm:w-[156px]' src="/images/aptos.svg" alt="aptos_image"/>
         </div>
         <div className='w-full pb-64 lg:flex'>
-          <Marquee autoFill={true}>
+        <Marquee autoFill={true} style={{ overflowY: "hidden" }}>
             <p className='z-10 px-24 pt-24 font-bold text-center text-white font-Outfit text-7xl max-sm:text-5xl'>Let's connect</p>
           </Marquee>
         </div>
@@ -29,7 +29,7 @@ function EarlyAccess() {
             <Waitlist isModel={false}/>
           </div>
           <div className='absolute text-center w-full bottom-[12%]'>
-            <p className="text-[20px] text-center text-white font-Outfit font-bold">Find out more about Townesquare</p>
+            <p className="text-[20px] text-center text-white font-Outfit font-bold">Find out more about TowneSquare</p>
             <div className='flex justify-center pt-6 space-x-8'>
               <a href='https://twitter.com/TowneSquarexyz' target="_blank" rel="noreferrer">
                 <img src="/images/twitter.svg" alt="twitter_image"/>
