@@ -194,11 +194,11 @@ function Vision() {
               </div>
               <div className="bg-no-repeat bg-cover bg-L7" data-component="Vision">
                 <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row">
-                  <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
+                   <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
                       className="w-full"
-                      src="/images/identity_freedom.svg"
-                      alt="identity_freedom"
+                      src="/images/Identity_freedom.svg"
+                      alt="financial_freedom"
                     />
                   </div>
                   <div>
