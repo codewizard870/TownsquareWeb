@@ -21,7 +21,6 @@ function Vision() {
     if (offSetTop !== undefined) {
       value = ((window.scrollY - offSetTop) / window.innerHeight) * 100;
       percentage = value < 0 ? 0 : value > 400 ? 400 : value;
-      console.log(window.scrollY, offSetTop, window.innerWidth, window.innerHeight, percentage)
     }
     // const intro = document.querySelector(".intro")?.parentElement?.offsetWidth;
     // if (intro !== undefined) {
@@ -38,9 +37,9 @@ function Vision() {
   });
 
   return (
-    <div className="h-full bg-black bg-right-bottom bg-no-repeat bg-contain scroll-smooth lg:bg-vision-bg">
-      <div className="h-[600vh]">
-        <ScrollTrigger start="800px" end="1200px" scrub={0.5}>
+    <div id="visionDiv" className="h-full bg-black bg-right-bottom bg-no-repeat bg-contain scroll-smooth lg:bg-vision-bg">
+      <div className="h-[550vh]">
+        <ScrollTrigger start="800px" end="900px" scrub={0.5}>
           <div className="sticky sticky_2 overflow-hidden top-0 h-[100vh]">
             <Tween
               from={{
@@ -67,7 +66,7 @@ function Vision() {
                   ~ full control
                 </p>
                 <p className="absolute font-bold opacity-20 top-32 right-px md:top-[33%] lg:top-[69%] lg:left-[48%] md:text-2xl lg:font-medium">
-                  = p2p payment
+                  = P2P payment
                 </p>
                 <p className="absolute font-bold opacity-50 bottom-40 focus-visible:opacity-100 right-4 lg:left-[3%] md:left-[61%] md:bottom-[31%] md:text-2xl lg:font-medium lg:top-[47%]">
                   ~ financial freedom
@@ -90,7 +89,7 @@ function Vision() {
                         We want to put the power of Web3 in
                       </p>
                       <p className="md:text-[48px] text-[40px] text-center font-Outfit font-medium ">
-                        the hands of billons, so we created
+                        the hands of billions, so we created
                       </p>
                       <p className="md:text-[48px] text-[40px] text-center font-Outfit font-medium ">
                         {" "}
@@ -113,7 +112,7 @@ function Vision() {
                       Envision a future where everyone has
                     </p>
                     <h1  className="md:text-[48px] text-[40px] font-Outfit font-medium">
-                      finance, informational ,and identity freedom
+                      finance, informational, and identity freedom
                     </h1>
                     {/* <Reveal repeat>
                       <Tween
