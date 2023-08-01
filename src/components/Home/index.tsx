@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { images } from '../../constants/images';
-import { BsTwitter } from 'react-icons/bs';
 
 type HeaderProps = {
   clickWaitlist: () => void;
