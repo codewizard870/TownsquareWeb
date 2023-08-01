@@ -42,7 +42,7 @@ function Splin() {
         if (ref1.current != null && (ref1.current as any).style != null) {
           let node = ref1.current as any;
           let numPoint = 10;
-          const r = 30;
+          const r = 24;
 
           let clipPath = `polygon(
             calc(30vw + ${10 * self.progress}vw) 0, 
@@ -65,7 +65,6 @@ function Splin() {
           clipPath += ")";
 
           node.style.clipPath = clipPath;
-          console.log(clipPath)
         }
       },
     });
