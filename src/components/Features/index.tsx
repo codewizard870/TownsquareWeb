@@ -1,4 +1,4 @@
-import React, { useEffect, useState, forwardRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Controller, Scene } from 'react-scrollmagic';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -16,7 +16,7 @@ import BackgroundRight from './background_right';
 gsap.registerPlugin(ScrollTrigger);
 
 
-const Features = forwardRef((props) => {
+function Features() {
   const [offset, setOffset] = useState(700);
 
   useEffect(() => {
@@ -45,6 +45,6 @@ const Features = forwardRef((props) => {
       </Controller>
     </div>
   )
-})
+};
 
 export default Features
