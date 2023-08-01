@@ -71,7 +71,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
                   >
                     
                     Follow us on
-                    <img src="/images/twitter.svg" alt="twitter_image"/>
+                    <img src="/images/twitter-header.svg" alt="twitter_image"/>
                     <span className="hidden lg:block">Twitter</span>
                   </button>
                 </a>
