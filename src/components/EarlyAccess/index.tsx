@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import Marquee from "react-fast-marquee";
 import Waitlist from '../Waitlist';
+import { BsGithub, BsGit } from "react-icons/bs";
 
 function EarlyAccess() {
   return (
@@ -34,9 +35,26 @@ function EarlyAccess() {
               <a href='https://twitter.com/TowneSquarexyz' target="_blank" rel="noreferrer">
                 <img src="/images/twitter.svg" alt="twitter_image"/>
               </a>
-              <a href='https://github.com/TowneSquare' target="_blank" rel="noreferrer">
-                <img src="/images/github.svg" alt="github_image"/>
-              </a>
+              <div className="w-6 md:w-8 h-6 md:h-8">
+                <a href='https://github.com/TowneSquare' target="_blank" rel="noreferrer">
+                  <BsGithub
+                    size="auto"
+                    style={{
+                      color: "#F2F0FF",
+                    }}
+                  />
+                </a>
+              </div>
+              <div className="w-6 md:w-8 h-6 md:h-8">
+                <a href="https://docs.townesquare.xyz/townesquare-whitepaper/">
+                  <BsGit
+                    size="auto"
+                    style={{
+                      color: "#F2F0FF",
+                    }}
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
