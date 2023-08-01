@@ -71,14 +71,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
                   >
                     
                     Follow us on
-                    <BsTwitter
-                      size={38}
-                      style={{
-                        color: "#009EF7",
-                        paddingLeft: "8px",
-                        paddingRight: "8px",
-                      }}
-                    />
+                    <img src="/images/twitter-header.svg" alt="twitter_image"/>
                     <span className="hidden lg:block">Twitter</span>
                   </button>
                 </a>
