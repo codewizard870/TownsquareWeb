@@ -14,7 +14,7 @@ export const Footer = (props: any) => {
           <div>
             <div className="pb-2 text-sm font-semibold text-white font-Outfit">Follow us</div>
             <div className="flex">
-              <a className="items-center justify-center pr-3 mt-1 mr-3"href="https://twitter.com/TowneSquarexyz">
+              <a className="items-center justify-center pr-3 mt-1 mr-3" href="https://twitter.com/TowneSquarexyz" target='_blank'>
                 {/* <BsTwitter
                   size={34}
                   style={{
@@ -25,7 +25,7 @@ export const Footer = (props: any) => {
                 /> */}
                 <img src="/images/sm-twitter.svg" alt="twitter_image"/>
               </a>
-              <a href="https://github.com/TowneSquare">
+              <a href="https://github.com/TowneSquare" target='_blank'>
                 <BsGithub
                   size={34}
                   style={{
