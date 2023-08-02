@@ -20,6 +20,11 @@ body{
   font-family: Outfit, Urbanist, Arial, Helvetica, sans-serif;
   color: white;
 }
+.right-panel-menu ul li{
+  height: 44px;
+  cursor: pointer;
+  padding-top: 15px;
+}
 
 .right-panel-menu ul li.active {
   color: #00EEFD;
