@@ -31,12 +31,12 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
       </div>
       <div className="flex gap-4 md:gap-8 items-center">
         <div className="w-6 md:w-8 h-6 md:h-8">
-          <a href="https://twitter.com/TowneSquarexyz">
+          <a href="https://twitter.com/TowneSquarexyz" target='_blank'>
             <img src="/images/twitter.svg" alt="twitter_image"/>
           </a>
         </div>
         <div className="w-6 md:w-8 h-6 md:h-8">
-          <a href="https://github.com/TowneSquare">
+          <a href="https://github.com/TowneSquare" target='_blank'>
             <BsGithub
               size="auto"
               style={{
@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           </a>
         </div>
         <div className="w-6 md:w-8 h-6 md:h-8">
-          <a href="https://docs.townesquare.xyz/townesquare-whitepaper/">
+          <a href="https://docs.townesquare.xyz/townesquare-whitepaper/" target='_blank'>
             <BsGit
               size="auto"
               style={{
