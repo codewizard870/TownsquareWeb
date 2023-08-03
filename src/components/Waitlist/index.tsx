@@ -47,46 +47,46 @@ const Waitlist: React.FC<Props> = ({ isModel, onClose }) => {
         setEmail(' ')
     }
 
-  return (
-    <div className="w-8/12 py-20 bg-gray-500 border border-white rounded-md bg-opacity-40 backdrop-blur-2xl">
-        {
-            isModel ?
-            <div className='absolute top-1 right-4'>
-                <button
-                    onClick={handleClose}
-                    className="bg-transparent text-white text-[50px] leading-none p-1 rounded-full"
-                >
-                    <span className="font-thin">×</span>
-                </button>
-            </div>
-            :
-            null
-        }
-        <p className="text-[32px] text-center text-white font-Outfit font-bold">Be among the first to try out TowneSquare</p>
-        <p className="text-[18px] text-center text-white font-Outfit pt-4">We’ll send you an invite to try out TowneSquare as soon as we’re ready.<br/>No spam, no junk mail or other mumbo-jumbo, pinky promise!</p>
-        <div>
-            <div className='flex justify-center space-x-6 pt-14'>
-                <div className='w-6/12 h-24'>
-                    <input value={email} className="placeholder-shown:border-gray-500 border-[#CCCCCC] border rounded-full bg-black px-5 w-full text-white text-[16px] py-1 h-12" placeholder='Your email' onChange={handleEmailChange} />
-                    {
-                    error ?
-                        <p className='text-[#FF6069] font-Outfit text-lg pt-3'>{error}</p>
-                    :
-                    isComplete ?
-                        <p className='text-[#32D583] font-Outfit text-lg pt-3'>Thanks for signing up, we won't let you down!</p>
+    return (
+        <div className="w-[90%] md:w-8/12 py-20 bg-gray-500 border border-white rounded-md bg-opacity-40 backdrop-blur-2xl">
+            {
+                isModel ?
+                    <div className='absolute top-1 right-4'>
+                        <button
+                            onClick={handleClose}
+                            className="bg-transparent text-white text-[50px] leading-none p-1 rounded-full"
+                        >
+                            <span className="font-thin">×</span>
+                        </button>
+                    </div>
                     :
                     null
-                    }
+            }
+            <p className="text-[32px] text-center text-white font-Outfit font-bold">Be among the first to try out TowneSquare</p>
+            <p className="text-[18px] text-center text-white font-Outfit pt-4">We’ll send you an invite to try out TowneSquare as soon as we’re ready.<br />No spam, no junk mail or other mumbo-jumbo, pinky promise!</p>
+            <div>
+                <div className='flex flex-col lg:flex-row justify-center lg:space-x-6 pt-14'>
+                    <div className='w-full px-4 lg:px-0 lg:w-6/12 h-24'>
+                        <input value={email} className="placeholder-shown:border-gray-500 border-[#CCCCCC] border rounded-full bg-black px-5 w-full text-white text-[16px] py-1 h-12" placeholder='Your email' onChange={handleEmailChange} />
+                        {
+                            error ?
+                                <p className='text-[#FF6069] font-Outfit text-lg pt-3'>{error}</p>
+                                :
+                                isComplete ?
+                                    <p className='text-[#32D583] font-Outfit text-lg pt-3'>Thanks for signing up, we won't let you down!</p>
+                                    :
+                                    null
+                        }
+                    </div>
+                    <button className="mx-4 lg:mx-0 rounded-full bg-[#9264F8] hover:bg-[#B882FF] active:bg-[#6646AE] active:border-[#6646AE] text-[18px] font-Outfit text-white py-2 px-6 h-12 focus:border-white-600 focus-visible:border-white-600"
+                        onClick={checkEmail}
+                    >
+                        Join waitlist
+                    </button>
                 </div>
-                <button className="rounded-full bg-[#9264F8] hover:bg-[#B882FF] active:bg-[#6646AE] active:border-[#6646AE] text-[18px] font-Outfit text-white py-2 px-6 h-12 focus:border-white-600 focus-visible:border-white-600" 
-                    onClick={checkEmail}
-                >
-                    Join waitlist
-                </button>
             </div>
         </div>
-    </div>
-  );
+    );
 };
 
 export default Waitlist;
