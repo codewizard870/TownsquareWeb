@@ -17,10 +17,14 @@ function Vision() {
     const offSetTop = sticky?.parentElement?.offsetTop;
     const scrollSection = sticky?.querySelector(".scroll_section");
     let value = 0;
+    let limit = 400;
+    if(window.innerWidth < 768){
+      limit = 650;
+    }
 
     if (offSetTop !== undefined) {
       value = ((window.scrollY - offSetTop) / window.innerHeight) * 100;
-      percentage = value < 0 ? 0 : value > 400 ? 400 : value;
+      percentage = value < 0 ? 0 : value > limit ? limit : value;
     }
     // const intro = document.querySelector(".intro")?.parentElement?.offsetWidth;
     // if (intro !== undefined) {
@@ -38,7 +42,7 @@ function Vision() {
 
   return (
     <div id="visionDiv" className="h-full bg-black bg-right-bottom bg-no-repeat bg-contain scroll-smooth lg:bg-vision-bg">
-      <div className="h-[550vh]">
+      <div className="h-[750vh] md:h-[550vh]">
         <ScrollTrigger start="800px" end="900px" scrub={0.5}>
           <div className="sticky sticky_2 overflow-hidden top-0 h-[100vh]">
             <Tween
@@ -80,9 +84,10 @@ function Vision() {
               </div>
             </Tween>
 
-            <div className="relative scroll_section h-[100%] w-[600vw] will-change-transform flex">
+            <div className="relative scroll_section h-[100%] w-[1200vw] md:w-[600vw] will-change-transform flex">
               <div className="bg-no-repeat bg-cover bg-L3">
-                <div className="relative flex items-center justify-center w-screen h-screen text-white bg-black left-100 lg:bg-transparent font-Outfit">
+                <div className="relative flex items-center justify-center w-[150vw] px-[25vw] md:px-0 md:w-screen h-screen text-white bg-black left-100 lg:bg-transparent font-Outfit"
+                >
                   <div className="flex items-center justify-center h-full">
                     <div className="flex flex-col items-center justify-center intro">
                       <p className="md:text-[48px] text-[40px] text-center font-Outfit font-medium ">
@@ -104,9 +109,8 @@ function Vision() {
                   </div>
                 </div>
               </div>
-
               <div className="z-[50] bg-no-repeat bg-cover bg-L3" data-component="Vision">
-                <div className="flex items-center justify-center w-screen h-screen envision">
+                <div className="flex items-center justify-center w-[150vw] px-[25vw] md:px-0 md:w-screen h-screen envision">
                   <div className="text-center">
                     <p className="text-[32px] text-center text-white">
                       Envision a future where everyone has
@@ -137,7 +141,7 @@ function Vision() {
                 </div>
               </div>
               <div className="bg-no-repeat bg-cover bg-L5" data-component="Vision">
-                <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white financial z-100 font-Outfit lg:flex-row md:flex-row">
+                <div className="flex flex-col items-center justify-center w-[150vw] px-[25vw] md:px-2 md:w-screen h-screen text-white financial z-100 font-Outfit lg:flex-row md:flex-row">
                   <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
                       className="w-full"
@@ -164,7 +168,7 @@ function Vision() {
                 </div>
               </div>
               <div className="bg-no-repeat bg-cover bg-L6" data-component="Vision">
-                <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row">
+                <div className="flex flex-col items-center justify-center w-[150vw] px-[25vw] md:px-2 md:w-screen h-screen  text-white font-Outfit lg:flex-row md:flex-row">
                   <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
                       className="w-full"
@@ -193,7 +197,7 @@ function Vision() {
                 </div>
               </div>
               <div className="bg-no-repeat bg-cover bg-L7" data-component="Vision">
-                <div className="flex flex-col items-center justify-center w-screen h-screen px-2 text-white font-Outfit lg:flex-row md:flex-row">
+                <div className="flex flex-col items-center justify-center w-[150vw] px-[25vw] md:px-2 md:w-screen h-screen text-white font-Outfit lg:flex-row md:flex-row">
                    <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
                       className="w-full"
