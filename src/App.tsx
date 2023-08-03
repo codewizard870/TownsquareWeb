@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
 import TermsOfService from "./pages/TermsOfService";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Transparency from "./components/Transparency";
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/TermsOfService" element={<TermsOfService />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </div>
