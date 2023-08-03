@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const TermsOfService = () => {
+const PrivacyPolicy = () => {
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -240,4 +240,4 @@ const TermsOfService = () => {
   );
 };
 
-export default TermsOfService;
+export default PrivacyPolicy;
