@@ -27,7 +27,7 @@ function Screen1() {
       onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
-          node.style.transform = `translate(calc(-50% - ${20 * self.progress}vw), calc(-50% - ${30 * self.progress}vh))`
+          node.style.transform = `translate(calc(-50% - ${20 * self.progress}vw), calc(-50% - ${510 * self.progress}px + ${25 * self.progress}vh))`
         }
       },
     });
@@ -81,7 +81,7 @@ function Screen1() {
         <img src="/images/financial_img.png" alt="sign" className="self-center space-squiggle" />
       </div>
       <img ref={ref2} src="/images/features/feed.svg" alt='feature1' className="absolute w-[300px] self-center  -translate-x-1/2 -translate-y-1/2"
-        style={{ left: `50vw`, top: `80vh` }}
+        style={{ left: `50vw`, top: `calc(25vh + 510px)` }}
       />
       <div ref={ref3} className="absolute w-[500px] -translate-y-1/2"
         style={{ left: `150vw`, top: `50vh` }}
