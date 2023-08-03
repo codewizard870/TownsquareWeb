@@ -65,8 +65,8 @@ const Waitlist: React.FC<Props> = ({ isModel, onClose }) => {
             <p className="text-[32px] text-center text-white font-Outfit font-bold">Be among the first to try out TowneSquare</p>
             <p className="text-[18px] text-center text-white font-Outfit pt-4">We’ll send you an invite to try out TowneSquare as soon as we’re ready.<br />No spam, no junk mail or other mumbo-jumbo, pinky promise!</p>
             <div>
-                <div className='flex flex-col lg:flex-row justify-center lg:space-x-6 pt-14'>
-                    <div className='w-full px-4 lg:px-0 lg:w-6/12 h-24'>
+                <div className='flex flex-col lg:flex-row justify-center space-y-4 md:space-y-0 lg:space-x-6 pt-12 md:pt-14'>
+                    <div className='w-full px-4 lg:px-0 lg:w-6/12 md:h-24'>
                         <input value={email} className="placeholder-shown:border-gray-500 border-[#CCCCCC] border rounded-full bg-black px-5 w-full text-white text-[16px] py-1 h-12" placeholder='Your email' onChange={handleEmailChange} />
                         {
                             error ?
