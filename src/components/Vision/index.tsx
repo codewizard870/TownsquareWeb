@@ -19,7 +19,7 @@ function Vision() {
     let value = 0;
     let limit = 400;
     if(window.innerWidth < 768){
-      limit = 650;
+      limit = 625;
     }
 
     if (offSetTop !== undefined) {
