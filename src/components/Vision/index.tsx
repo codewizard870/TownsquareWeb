@@ -10,8 +10,6 @@ import {
 let percentage = 0;
 
 function Vision() {
-  // const [first, setFirst] = useState<undefined | number>(0);
-  // const [second, setSecond] = useState<undefined | number>(0);
   const transform = () => {
     const sticky = document.querySelector(".sticky_2");
     const offSetTop = sticky?.parentElement?.offsetTop;
@@ -19,17 +17,14 @@ function Vision() {
     let value = 0;
     let limit = 400;
     if(window.innerWidth < 768){
-      limit = 625;
+      limit = 600;
     }
 
     if (offSetTop !== undefined) {
       value = ((window.scrollY - offSetTop) / window.innerHeight) * 100;
       percentage = value < 0 ? 0 : value > limit ? limit : value;
     }
-    // const intro = document.querySelector(".intro")?.parentElement?.offsetWidth;
-    // if (intro !== undefined) {
-    //   setFirst(intro * 2);
-    // }
+
     scrollSection?.setAttribute(
       "style",
       `transform:translate3d(${-percentage}vw, 0, 0)`
@@ -86,7 +81,7 @@ function Vision() {
 
             <div className="relative scroll_section h-[100%] w-[1200vw] md:w-[600vw] will-change-transform flex">
               <div className="bg-no-repeat bg-cover bg-L3">
-                <div className="relative flex items-center justify-center w-[150vw] px-[25vw] md:px-0 md:w-screen h-screen text-white bg-black left-100 lg:bg-transparent font-Outfit"
+                <div className="relative flex items-center justify-center w-[125vw] pr-[25vw] md:px-0 md:w-screen h-screen text-white bg-black left-100 lg:bg-transparent font-Outfit"
                 >
                   <div className="flex items-center justify-center h-full">
                     <div className="flex flex-col items-center justify-center intro">
