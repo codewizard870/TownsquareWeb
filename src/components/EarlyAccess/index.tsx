@@ -20,7 +20,7 @@ function EarlyAccess() {
         </div>
         <div className='w-full pb-64 lg:flex'>
         <Marquee autoFill={true} style={{ overflowY: "hidden" }}>
-            <p className='z-10 px-24 pt-24 font-bold text-center text-white font-Outfit text-7xl max-sm:text-5xl'>Let's connect</p>
+            <p className='z-10 px-[32px] py-[80px] md:py-24 font-bold text-center text-white font-Outfit md:text-[77px] leading-[48px] md:leading-normal text-[48px]'>Let's connect</p>
           </Marquee>
         </div>
         <div className='relative'>
@@ -35,7 +35,7 @@ function EarlyAccess() {
               <a href='https://twitter.com/TowneSquarexyz' target="_blank" rel="noreferrer">
                 <img src="/images/twitter.svg" alt="twitter_image"/>
               </a>
-              <div className="w-6 md:w-8 h-6 md:h-8">
+              <div className="w-6 h-6 md:w-8 md:h-8">
                 <a href='https://github.com/TowneSquare' target="_blank" rel="noreferrer">
                   <BsGithub
                     size="auto"
@@ -45,7 +45,7 @@ function EarlyAccess() {
                   />
                 </a>
               </div>
-              <div className="w-6 md:w-8 h-6 md:h-8">
+              <div className="w-6 h-6 md:w-8 md:h-8">
                 <a href="https://docs.townesquare.xyz/townesquare-whitepaper/" target='_blank'>
                   <BsGit
                     size="auto"

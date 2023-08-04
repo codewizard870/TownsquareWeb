@@ -22,10 +22,7 @@ function Vision() {
       value = ((window.scrollY - offSetTop) / window.innerHeight) * 100;
       percentage = value < 0 ? 0 : value > 400 ? 400 : value;
     }
-    // const intro = document.querySelector(".intro")?.parentElement?.offsetWidth;
-    // if (intro !== undefined) {
-    //   setFirst(intro * 2);
-    // }
+    
     scrollSection?.setAttribute(
       "style",
       `transform:translate3d(${-percentage}vw, 0, 0)`

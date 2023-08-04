@@ -16,8 +16,9 @@ const RightPanelMenu = (props: Stage) => {
   };
 
   return (
+  
     <div
-      className={`right-panel-menu border-t-2 border-white w-[110%] px-22 md:border-none md:w-fit fixed bottom-0 right-[-7.5rem] md:right-[-20px] md:top-1/3 z-50 font-Outfit font-bold text-sm text-[#7F7F7F] transform transition-transform -translate-x-20 ${
+      className={`right-panel-menu w-[110%] box-border m-0 md:backdrop-blur-none md:bg-transparent md:w-fit fixed bottom-0 right-[-7.5rem] md:right-[-20px] md:top-1/3 z-50 font-Outfit font-bold text-sm text-[#7F7F7F] transform transition-transform -translate-x-20 ${
         props.stage === "Early" && props.isVisible
           ? "-translate-x-[8.5rem] md:-translate-x-9"
           : props.isVisible
@@ -25,32 +26,30 @@ const RightPanelMenu = (props: Stage) => {
           : "translate-x-full"
       }`}
     >
-      <div className="backdrop-brightness-50 bg-white/30">
-
-      </div>
-      <ul className="flex items-center justify-between space-x-2 list-disc cursor-default md:flex-col md:space-y-2">
+    
+      <ul className="flex items-center justify-between pb-2 space-x-8 list-disc cursor-default md:flex-col md:space-y-2">
         <li
           className={
-            props.stage === "Introduction" ? "active" : "cursor-pointer"
+            props.stage === "Introduction" ? "active text-white text-white/50  text-base" : "cursor-pointer text-white/50 text-base"
           }
           onClick={() => handlePanelClick("homeDiv")}
         >
           Introduction
         </li>
         <li
-          className={props.stage === "Vision" ? "active" : "cursor-pointer"}
+          className={props.stage === "Vision" ? "active text-white/50 text-base" : "cursor-pointer text-white/50 text-base"}
           onClick={() => handlePanelClick("visionDiv")}
         >
           Vision
         </li>
         <li
-          className={props.stage === "Features" ? "active" : "cursor-pointer"}
+          className={props.stage === "Features" ? "active text-white/50 text-base" : "cursor-pointer text-white/50 text-base"}
           onClick={() => handlePanelClick("feature")}
         >
           Features
         </li>
         <li
-          className={props.stage === "Early" ? "active" : "cursor-pointer"}
+          className={props.stage === "Early" ? "active text-white/50 text-base" : "cursor-pointer text-white/50 text-base"}
           onClick={() => handlePanelClick("earlyAccessDiv")}
         >
           Get early access
