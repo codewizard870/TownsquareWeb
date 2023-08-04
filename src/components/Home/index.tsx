@@ -63,7 +63,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           />
         </div>
 
-        <div className="relative z-10 flex items-center justify-center h-full pt-24 pb-8 lg:pt-32 lg:pb-48">
+        <div className="relative z-10 flex items-center justify-center h-full pt-24 pb-8 lg:pt-40 lg:pb-40">
           <div className="flex flex-col-reverse items-center justify-center gap-8 px-4 md:flex-row-reverse lg:flex-row lg:gap-32">
             <div className="flex flex-col gap-6 max-w-[800px] md:pr-10 lg:pr-0">
               <div></div>
@@ -106,10 +106,10 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
                   Join waitlist
                 </button>
                 <a href="https://twitter.com/townesquarexyz" target="_blank">
-                  <button className="px-8 md:px-8 lg:px-8 h-12 flex items-center text-[18px] text-white font-semibold  hover:bg-[#FFFFFF33] active:bg-[#FFFFFF66] border-2 border-white rounded-full whitespace-nowrap">
-                    Follow us on
+                  <button className="px-8 md:px-8 lg:px-8 h-12 flex flex-row items-center justify-center text-[18px] text-white font-semibold  hover:bg-[#FFFFFF33] active:bg-[#FFFFFF66] border-2 border-white rounded-full whitespace-nowrap">
+                    <span className="block">Follow us on</span>
                     <img src="/images/twitter-header.svg" alt="twitter_image" />
-                    <span className="hidden lg:block">Twitter</span>
+                    <span className="hidden pt-[2px] lg:block">Twitter</span>
                   </button>
                 </a>
               </div>
