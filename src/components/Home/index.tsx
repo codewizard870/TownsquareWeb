@@ -30,24 +30,24 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           <img
             src="/images/home/left_web.svg"
             alt="background"
-            className="top-0 left-0"
+            className="top-0 left-0 h-full"
           />
           <img
             src="/images/home/right_web.svg"
             alt="background"
-            className="absolute top-0 right-0"
+            className="absolute top-0 right-0 h-full"
           />
         </div>
         <div className="absolute z-0 hidden w-full md:block lg:hidden">
           <img
             src="/images/home/left_tablet.svg"
             alt="background"
-            className="top-0 left-0"
+            className="top-0 left-0 h-full"
           />
           <img
             src="/images/home/right_tablet.svg"
             alt="background"
-            className="absolute top-[40vh] right-0"
+            className="absolute top-[40vh] right-0 h-full"
           />
         </div>
         <div className="absolute z-0 block w-full md:hidden">
@@ -63,7 +63,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
           />
         </div>
 
-        <div className="relative z-10 flex items-center justify-center pt-24 pb-8 lg:pt-32 lg:pb-48">
+        <div className="relative z-10 flex items-center justify-center h-full pt-24 pb-8 lg:pt-32 lg:pb-48">
           <div className="flex flex-col-reverse items-center justify-center gap-8 px-4 md:flex-row-reverse lg:flex-row lg:gap-32">
             <div className="flex flex-col gap-6 max-w-[800px] md:pr-10 lg:pr-0">
               <div></div>
