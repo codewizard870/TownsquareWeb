@@ -27,7 +27,7 @@ const RightPanelMenu = (props: Stage) => {
       }`}
     >
     
-      <ul className="flex items-center justify-between pb-2 space-x-8 list-disc cursor-default md:flex-col md:space-y-2">
+      <ul className="flex items-baseline justify-between pb-2 space-x-8 list-disc cursor-default md:flex-col md:space-y-2">
         <li
           className={
             props.stage === "Introduction" ? "active text-white text-white/50  text-base" : "cursor-pointer text-white/50 text-base"
@@ -50,6 +50,7 @@ const RightPanelMenu = (props: Stage) => {
         </li>
         <li
           className={props.stage === "Early" ? "active text-white/50 text-base" : "cursor-pointer text-white/50 text-base"}
+          style={{whiteSpace: "nowrap"}}
           onClick={() => handlePanelClick("earlyAccessDiv")}
         >
           Get early access
