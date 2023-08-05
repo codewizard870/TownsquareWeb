@@ -76,7 +76,7 @@ function Main() {
       </div>
       <Vision />
       <Features />
-      {/* <FeaturesMobile /> */}
+      <FeaturesMobile />
       <EarlyAccess />
       {/* <Footer/> */}
     </div>
