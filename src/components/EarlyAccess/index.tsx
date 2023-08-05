@@ -20,7 +20,7 @@ function EarlyAccess() {
         </div>
         <div className='w-full pb-64 lg:flex'>
         <Marquee autoFill={true} style={{ overflowY: "hidden" }}>
-            <p className='z-10 px-24 pt-24 font-bold text-center text-white font-Outfit text-7xl max-sm:text-5xl'>Let's connect</p>
+            <p className='z-10 px-[32px] py-[80px] md:py-24 font-bold text-center text-white font-Outfit md:text-[77px] leading-[48px] md:leading-normal text-[48px]'>Let's connect</p>
           </Marquee>
         </div>
         <div className='relative h-[1000px] md:h-[1200px] lg:h-[auto] overflow-hidden lg:overflow-visible'>

@@ -24,7 +24,6 @@ function Vision() {
       value = ((window.scrollY - offSetTop) / window.innerHeight) * 100;
       percentage = value < 0 ? 0 : value > limit ? limit : value;
     }
-
     scrollSection?.setAttribute(
       "style",
       `transform:translate3d(${-percentage}vw, 0, 0)`
