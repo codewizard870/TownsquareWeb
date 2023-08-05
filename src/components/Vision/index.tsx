@@ -1,10 +1,6 @@
-import { useState } from "react";
 import {
-  Reveal,
   Tween,
-  SplitChars,
   ScrollTrigger,
-  SplitWords,
 } from "react-gsap";
 
 let percentage = 0;

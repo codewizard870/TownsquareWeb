@@ -1,5 +1,3 @@
-import axios from 'axios';
-import React, { useState } from 'react'
 import Marquee from "react-fast-marquee";
 import Waitlist from '../Waitlist';
 import { BsGithub, BsGit } from "react-icons/bs";

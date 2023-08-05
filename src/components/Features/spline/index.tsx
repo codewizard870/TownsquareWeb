@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Spline1 from './spline1';
 import Spline2 from './spline2';

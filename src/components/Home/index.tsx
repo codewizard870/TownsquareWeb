@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { images } from "../../constants/images";
 
 type HeaderProps = {
   clickWaitlist: () => void;

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
 import TermsOfService from "./pages/TermsOfService";
