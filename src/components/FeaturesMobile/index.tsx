@@ -55,7 +55,7 @@ function FeaturesMobile() {
   });
 
   return (
-    <div className="bg-black md:hidden" id="feature_1" data-component="Features">
+    <div className="bg-black md:hidden" id="feature_1" data-component="FeaturesMobile">
       <Controller>
         <Scene duration={1000} pin>
           <div className="w-full">
@@ -70,7 +70,7 @@ function FeaturesMobile() {
       <Screen4 />
       <Screen5 />
       <div className="h-[300vh] mt-20">
-        <div className=" bg-[#5E409E] sticky feature-sticky overflow-hidden top-0 h-[100vh]">
+        <div className=" bg-[#5E409E] bg-feature-line bg-no-repeat sticky feature-sticky overflow-hidden top-0 h-[100vh]">
           <div className="relative scroll_section h-[100%] w-[300vw] will-change-transform flex">
             <div className="flex flex-col items-center justify-center w-screen h-screen px-4 ">
               <img src="/images/features/feature_mobile_1.svg" alt="feature7" />

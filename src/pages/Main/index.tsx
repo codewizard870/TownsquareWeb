@@ -11,7 +11,7 @@ import Transparency from '../../components/Transparency';
 
 function Main() {
   const [currentComponent, setCurrentComponent] = useState<string | null>(null);
-  const components = ['Home', 'Introduction', 'Vision', 'Features', 'Early'];
+  const components = ['Home', 'Introduction', 'Vision', 'Features','FeaturesMobile','Early'];
   const [isTransparencyVisible, setIsTransparencyVisible] =  useState(false);
   const [isJoinAppear, setIsJoinAppear] = useState(false);
 
