@@ -1,6 +1,5 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-
+import React, { useRef, useEffect, useState } from "react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 function Screen3() {
   // const ref1 = useRef(null);
@@ -20,7 +19,7 @@ function Screen3() {
   //       }
   //     },
   //   });
-    
+
   //   ScrollTrigger.create({
   //     trigger: "#feature",
   //     start: "top top+=-2100px",
@@ -38,20 +37,22 @@ function Screen3() {
   // }, []);
 
   return (
-    <div
-      
-    >
-      <img src="/images/features/feature3.svg" alt='feature3'/>
-      <div>
-        <h1 className="text-[40px] font-bold">
-          An easy-to-use<br /> Web3 identity frontend
+    <div className="flex flex-col items-center justify-center h-screen">
+      <img src="/images/features/feature3.svg" alt="feature3" />
+      <div className="px-4 mt-[32px]">
+        <h1 className="text-[30px] font-bold">
+          An easy-to-use
+          <br /> Web3 identity frontend
         </h1>
-        <span className="text-2xl">
-          Your user profile on TowneSquare is an identity system that seamlessly connects on-chain credentials, NFT membership, and other verifiable experiences to enable new use cases such as ticketing, reward drops, and authentication services.
+        <span className="text-[18px] leading-[30px]">
+          Your user profile on TowneSquare is an identity system that seamlessly
+          connects on-chain credentials, NFT membership, and other verifiable
+          experiences to enable new use cases such as ticketing, reward drops,
+          and authentication services.
         </span>
       </div>
     </div>
-  )
+  );
 }
 
-export default Screen3
+export default Screen3;
