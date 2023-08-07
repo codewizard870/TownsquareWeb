@@ -9,6 +9,7 @@ import Screen3 from "./screen3";
 import BackgroundRight from "./background_right";
 import Screen4 from "./screen4";
 import Screen5 from "./screen5";
+import Lenis from "@studio-freight/lenis";
 gsap.registerPlugin(ScrollTrigger);
 
 function FeaturesMobile() {
@@ -54,8 +55,46 @@ function FeaturesMobile() {
     transform();
   });
 
+  const lenis = new Lenis();
+
+  lenis.on("scroll", (e: any) => {
+    console.log(e);
+  });
+
+  function raf(time: any) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
+  // const t1 = gsap.timeline({
+  //   scrollTrigger:{
+  //     trigger: ".bg-text",
+  //     markers:true,
+  //     start: "top top",
+  //     end:"bottom center"
+  //   }
+  // })
+
+
+
+  // t1.to('.bg-text',{
+  //     opacity:0
+  // })
+
+  
+
+
+
+  
+
   return (
-    <div className="bg-black md:hidden" id="feature_1" data-component="FeaturesMobile">
+    <div
+      className="bg-black md:hidden"
+      id="feature_1"
+      data-component="FeaturesMobile"
+    >
       <Controller>
         <Scene duration={1000} pin>
           <div className="w-full">
@@ -71,14 +110,10 @@ function FeaturesMobile() {
       <Screen5 />
       <div className="h-[320vh] mt-20">
         <div className=" bg-[#5E409E] bg-feature-line bg-no-repeat sticky feature-sticky overflow-hidden top-0 h-[100vh]">
-           <div className="absolute w-screen h-full flex flex-col justify-evenly items-center">
-            <p className="text-[47.876px] font-bold whitespace-nowrap opacity-5 text-transparent font-outline-2">
-              Own Spend Social
-            </p>
-            <p className="text-[47.876px] font-bold whitespace-nowrap opacity-5 text-transparent font-outline-2">
-              Anytime Anywhere
-            </p>
-           </div>
+          <div className="absolute w-screen h-full flex flex-col justify-evenly items-center bg-text opacity-100">
+            <img className="w-full" src="/images/features/bg_text_1_mobile.svg"/>
+             <img className="w-full" src="/images/features/bg_text_2_mobile.svg"/>
+          </div>
           <div className="relative scroll_section h-[100%] w-[320vw] will-change-transform gap-x-[4.5rem] flex">
             <div className="flex flex-col items-center justify-center w-screen h-screen mx-8">
               <img src="/images/features/feature_mobile_1.svg" alt="feature7" />
@@ -88,14 +123,22 @@ function FeaturesMobile() {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center w-screen h-screen mx-8">
-              <img className="" src="/images/features/feature_mobile_2.svg" alt="feature7" />
+              <img
+                className=""
+                src="/images/features/feature_mobile_2.svg"
+                alt="feature7"
+              />
               <p className="text-[18px] mt-20 font-medium text-center">
                 Discover new friends, communities, creators, and on-chain items
                 based on your interests
               </p>
             </div>
             <div className="flex flex-col items-center justify-center w-screen h-screen">
-              <img className="" src="/images/features/feature9.svg" alt="feature9" />
+              <img
+                className=""
+                src="/images/features/feature9.svg"
+                alt="feature9"
+              />
               <p className="text-[18px] mt-20 font-medium text-center">
                 Experience boundless possibilities with your on-chain verifiable
                 identity – gain exclusive event access, exciting airdrop
