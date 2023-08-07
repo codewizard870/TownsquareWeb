@@ -52,9 +52,8 @@ export const Footer = (props: any) => {
             <div className="text-sm font-bold text-white font-Outfit">Legal</div>
             <div className="text-[#CCCCCC] text-sm font-Outfit flex flex-col space-y-2">
               <Link to="/TermsOfService">Terms of Service</Link>
-               <Link to="/">Legal</Link>
-              {/* <a href="/privacypolicy" target="_blank">Privacy Policy</a> */}
-              <Link to="/">Privacy Policy</Link>
+              <Link to="/">Legal</Link>
+              <Link to="/PrivacyPolicy">Privacy Policy</Link>
             </div>
           </div>
           <div className="flex flex-col space-y-3">
