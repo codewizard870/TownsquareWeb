@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 function Text1() {

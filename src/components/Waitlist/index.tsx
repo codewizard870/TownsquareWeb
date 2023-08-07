@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
-import EarlyAccess from '../EarlyAccess';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 type Props = {

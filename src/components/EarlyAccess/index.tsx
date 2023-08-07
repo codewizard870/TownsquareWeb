@@ -1,5 +1,3 @@
-import axios from 'axios';
-import React, { useState } from 'react'
 import Marquee from "react-fast-marquee";
 import Waitlist from '../Waitlist';
 import { BsGithub, BsGit } from "react-icons/bs";
@@ -31,8 +29,8 @@ function EarlyAccess() {
 
           <div className="absolute flex flex-col items-center justify-center w-full bottom-[80px]">
             <Waitlist isModel={false} />
-            <div className='text-center w-full mt-[130px] md:mt-[112px] lg:mt-[40px]'>
-              <p className="text-[20px] text-center text-white font-Outfit font-bold">Find out more about TowneSquare</p>
+            <div className='text-center w-full mt-[60px] md:mt-[112px] lg:mt-[40px]'>
+              <p className="text-[20px] text-center text-white font-Outfit font-bold w-[60%] md:w-full mx-auto">Find out more about TowneSquare</p>
               <div className='flex justify-center pt-6 space-x-8'>
                 <a href='https://twitter.com/TowneSquarexyz' target="_blank" rel="noreferrer">
                   <img src="/images/twitter.svg" alt="twitter_image" />

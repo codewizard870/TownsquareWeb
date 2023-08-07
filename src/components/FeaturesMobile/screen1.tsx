@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { images } from "../../constants/images";
+import { useRef, useEffect } from 'react';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { images } from '../../constants/images';
 
 function Screen1() {
   const ref1 = useRef(null);
