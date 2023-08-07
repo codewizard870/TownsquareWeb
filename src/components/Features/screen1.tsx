@@ -50,7 +50,7 @@ function Screen1() {
       onUpdate: (self) => {
         if (ref2.current != null && (ref2.current as any).style != null) {
           let node = ref2.current as any;
-          node.style.transform = `translate(calc(-50% - 20vw - ${100 * self.progress}vw), calc(-50% - 30vh))`
+          node.style.transform = `translate(calc(-50% - 20vw - ${100 * self.progress}vw), calc(-50% - 510px + 25vh))`
         }
       },
     });
