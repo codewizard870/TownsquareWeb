@@ -24,7 +24,7 @@ function Features() {
   }, []);
 
   return (
-    <div className="hidden bg-black features-wrapper component md:block lg:block" id="feature" data-component="Features">
+    <div className="hidden bg-black features-wrapper component md:block lg:block" id="feature"  data-component="Features">
       <Controller>
         <Scene duration={5000} pin offset={`${offset}px`}>
           <div className="relative w-full">
