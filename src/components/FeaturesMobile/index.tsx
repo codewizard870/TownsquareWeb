@@ -72,10 +72,10 @@ function FeaturesMobile() {
       <div className="h-[320vh] mt-20">
         <div className=" bg-[#5E409E] bg-feature-line bg-no-repeat sticky feature-sticky overflow-hidden top-0 h-[100vh]">
            <div className="absolute w-screen h-full flex flex-col justify-evenly items-center">
-            <p className="text-[47.876px] font-bold whitespace-nowrap opacity-5">
+            <p className="text-[47.876px] font-bold whitespace-nowrap opacity-5 text-transparent font-outline-2">
               Own Spend Social
             </p>
-            <p className="text-[47.876px] font-bold whitespace-nowrap opacity-5">
+            <p className="text-[47.876px] font-bold whitespace-nowrap opacity-5 text-transparent font-outline-2">
               Anytime Anywhere
             </p>
            </div>
