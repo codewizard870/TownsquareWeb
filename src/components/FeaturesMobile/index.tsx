@@ -69,26 +69,26 @@ function FeaturesMobile() {
       <Screen3 />
       <Screen4 />
       <Screen5 />
-      <div className="h-[300vh] mt-20">
+      <div className="h-[350vh] mt-20">
         <div className=" bg-[#5E409E] bg-feature-line bg-no-repeat sticky feature-sticky overflow-hidden top-0 h-[100vh]">
-          <div className="relative scroll_section h-[100%] w-[300vw] will-change-transform flex">
+          <div className="relative scroll_section h-[100%] w-[350vw] will-change-transform gap-x-[4.5rem] flex">
             <div className="flex flex-col items-center justify-center w-screen h-screen mx-8">
               <img src="/images/features/feature_mobile_1.svg" alt="feature7" />
-              <p className="text-[16px] mx-6 mt-20 font-medium text-center">
+              <p className="text-[18px] mx-6 mt-20 font-medium text-center">
                 Self-bank yourself with crypto payments that can go to anyone
                 anywhere you want
               </p>
             </div>
             <div className="flex flex-col items-center justify-center w-screen h-screen mx-8">
-              <img className="w-[80%]" src="/images/features/feature_mobile_2.svg" alt="feature7" />
-              <p className="text-[16px] mt-20 font-medium w-[80%] text-center">
+              <img className="" src="/images/features/feature_mobile_2.svg" alt="feature7" />
+              <p className="text-[18px] mt-20 font-medium text-center">
                 Discover new friends, communities, creators, and on-chain items
-                based on your interests2
+                based on your interests
               </p>
             </div>
             <div className="flex flex-col items-center justify-center w-screen h-screen">
-              <img className="w-[80%]" src="/images/features/feature9.svg" alt="feature9" />
-              <p className="text-[18px] mt-20 font-medium w-[80%] text-center">
+              <img className="" src="/images/features/feature9.svg" alt="feature9" />
+              <p className="text-[18px] mt-20 font-medium text-center">
                 Experience boundless possibilities with your on-chain verifiable
                 identity – gain exclusive event access, exciting airdrop
                 rewards, and in-app perks!
