@@ -10,18 +10,18 @@ function EarlyAccess() {
           <img src='/images/early_left.svg' alt="left" className='absolute top-[0px] z-0' />
         </div>
         <div className="justify-center lg:flex">
-          <p className="text-[29px] max-md:text-5xl max-sm:text-[27px] pt-32 pb-24 text-center text-white font-Outfit font-bold">Backed by the best</p>
+          <p className="text-[29px] max-md:text-5xl max-sm:text-[27px] pt-32 pb-[60px] md:pb-24 text-center text-white font-Outfit font-bold">Backed by the best</p>
         </div>
-        <div className='flex justify-center pb-12 lg:space-x-24 max-lg:justify-between max-lg:px-12'>
-          <img className='max-sm:w-[156px]' src="/images/bixin.svg" alt="bixin_image"/>
-          <img className='max-sm:w-[156px]' src="/images/aptos.svg" alt="aptos_image"/>
+        <div className='flex flex-col md:flex-row gap-12 md:gap-0 items-center md:justify-center pb-[100px] md:pb-12 lg:space-x-24 max-lg:justify-between max-lg:px-12'>
+          <img className='max-sm:w-[156px]' src="/images/bixin.svg" alt="bixin_image" />
+          <img className='max-sm:w-[156px]' src="/images/aptos.svg" alt="aptos_image" />
         </div>
-        <div className='w-full pb-64 lg:flex'>
-        <Marquee autoFill={true} style={{ overflowY: "hidden" }}>
+        <div className='w-full pb:0 md:pb-64 lg:flex'>
+          <Marquee autoFill={true} style={{ overflowY: "hidden" }}>
             <p className='z-10 px-[32px] py-[80px] md:py-24 font-bold text-center text-white font-Outfit md:text-[77px] leading-[48px] md:leading-normal text-[48px]'>Let's connect</p>
           </Marquee>
         </div>
-        <div className='relative h-[1000px] md:h-[1200px] lg:h-[auto] overflow-hidden lg:overflow-visible'>
+        <div className='relative h-[800px] md:h-[1200px] lg:h-[auto] overflow-hidden lg:overflow-visible'>
           <img className='w-full absolute mt-0 lg:mt-[-200px]' src="/images/line.svg" alt="line_image" />
           <img className='hidden lg:block w-full' src="/images/bottom.svg" alt="bottom_image" />
           <img className='hidden md:block lg:hidden w-full' src="/images/early_access/bottom_tablet.svg" alt="bottom_image" />
