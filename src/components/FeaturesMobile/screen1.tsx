@@ -20,55 +20,18 @@ function Screen1() {
         }
       },
     });
-    //   ScrollTrigger.create({
-    //     trigger: "#feature",
-    //     start: "top top+=-300px",
-    //     end: "top top+=-600px",
-    //     onUpdate: (self) => {
-    //       if (ref2.current != null && (ref2.current as any).style != null) {
-    //         let node = ref2.current as any;
-    //         node.style.transform = `translate(calc(-50% - ${20 * self.progress}vw), calc(-50% - ${10 * self.progress}vh))`
-    //       }
-    //     },
-    //   });
-    //   ScrollTrigger.create({
-    //     trigger: "#feature",
-    //     start: "top top+=-300px",
-    //     end: "top top+=-600px",
-    //     onUpdate: (self) => {
-    //       if (ref3.current != null && (ref3.current as any).style != null) {
-    //         let node = ref3.current as any;
-    //         node.style.opacity = self.progress;
-    //         node.style.transform = `translate(calc(-50% + ${50 * self.progress}% - ${50 * self.progress}vw), -50%)`
-    //       }
-    //     },
-    //   });
 
-    //   ScrollTrigger.create({
-    //     trigger: "#feature",
-    //     start: "top top+=-900px",
-    //     end: "top top+=-1200px",
-    //     onUpdate: (self) => {
-    //       if (ref2.current != null && (ref2.current as any).style != null) {
-    //         let node = ref2.current as any;
-    //         node.style.opacity = 1 - self.progress;
-    //         node.style.transform = `translate(calc(-50% - 20vw - ${50 * self.progress}vw), calc(-50% - 10vh + ${50 * self.progress}vh))`
-    //       }
-    //     },
-    //   });
-    //   ScrollTrigger.create({
-    //     trigger: "#feature",
-    //     start: "top top+=-900px",
-    //     end: "top top+=-1200px",
-    //     onUpdate: (self) => {
-    //       if (ref3.current != null && (ref3.current as any).style != null) {
-    //         let node = ref3.current as any;
-    //         node.style.opacity = 1 - self.progress;
-    //         node.style.transform = `translate(calc(-50vw - ${50 * self.progress}vw), calc(-50% + ${50 * self.progress}vh))`
-    //       }
-    //     },
-    //   });
-    //   ScrollTrigger.refresh();
+    ScrollTrigger.create({
+      trigger: "#feature",
+      start: "top top+=-300px",
+      end: "top top+=-600px",
+      onUpdate: (self) => {
+        if (ref2.current != null && (ref2.current as any).style != null) {
+          let node = ref2.current as any;
+          node.style.transform = `translate(-50%, calc(-50% - ${20 * self.progress}vh))`
+        }
+      },
+    });
   }, []);
 
   return (
@@ -88,18 +51,15 @@ function Screen1() {
           className="self-center"
         />
       </div>
-      <div ref={ref2} className="absolute flex flex-col items-center self-center justify-center w-full mt-10 -translate-x-1/2 -translate-y-1/2" style={{ left: `50vw`, top: `60vh` }}>
+      <div ref={ref2} className="absolute flex flex-col items-center self-center justify-center w-full mt-10 -translate-x-1/2 -translate-y-1/2" style={{ left: `50vw`, top: `450px` }}>
         <img
-          
           src="/images/features/feed.svg"
           alt="feature1"
         />
         <div
-         
           className="px-4 mt-[32px]"
-         
         >
-          <h1 className="text-[30px] text-center font-bold">Contextual social feed</h1>
+          <h1 className="text-[30px] font-bold">Contextual social feed</h1>
           <span className="text-[18px] font-normal leading-[30px]">
             TowneSquare feed enables context-specific features for each post to
             maximize utility for viewers. Users can seamlessly transition
