@@ -1,6 +1,3 @@
-import { useRef, useEffect } from 'react';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-
 function Screen3() {
   return (
     <div className="flex flex-col items-center justify-center">

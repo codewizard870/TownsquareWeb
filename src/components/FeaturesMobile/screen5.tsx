@@ -1,6 +1,3 @@
-import { useRef, useEffect } from 'react';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-
 function Screen5() {
   return (
     <>

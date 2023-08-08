@@ -1,4 +1,3 @@
-import { useRef, useEffect, useState } from 'react';
 import { Controller, Scene } from 'react-scrollmagic';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
