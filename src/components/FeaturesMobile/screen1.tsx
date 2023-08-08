@@ -59,7 +59,7 @@ function Screen1() {
         <div
           className="px-4 mt-[32px]"
         >
-          <h1 className="text-[30px] text-center font-bold">Contextual social feed</h1>
+          <h1 className="text-[30px] font-bold">Contextual social feed</h1>
           <span className="text-[18px] font-normal leading-[30px]">
             TowneSquare feed enables context-specific features for each post to
             maximize utility for viewers. Users can seamlessly transition

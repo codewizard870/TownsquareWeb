@@ -2,7 +2,6 @@ import { useRef, useEffect, useState } from 'react';
 import { Controller, Scene } from 'react-scrollmagic';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import "./features.css";
 import Screen1 from "./screen1";
 import Screen2 from "./screen2";
 import Screen3 from "./screen3";
