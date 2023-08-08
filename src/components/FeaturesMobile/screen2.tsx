@@ -2,40 +2,8 @@ import { useRef, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 function Screen2() {
-  const ref1 = useRef(null);
-
-  // useEffect(() => {
-  //   ScrollTrigger.create({
-  //     trigger: "#feature",
-  //     start: "top top+=-900px",
-  //     end: "top top+=-1200px",
-  //     onUpdate: (self) => {
-  //       if (ref1.current != null && (ref1.current as any).style != null) {
-  //         let node = ref1.current as any;
-  //         node.style.opacity = self.progress;
-  //         node.style.transform = `translate(calc(-50% - ${50 * self.progress}vw), -50%)`
-  //       }
-  //     },
-  //   });
-
-  //   ScrollTrigger.create({
-  //     trigger: "#feature",
-  //     start: "top top+=-1500px",
-  //     end: "top top+=-1800px",
-  //     onUpdate: (self) => {
-  //       if (ref1.current != null && (ref1.current as any).style != null) {
-  //         let node = ref1.current as any;
-  //         node.style.opacity = 1 - self.progress;
-  //         node.style.transform = `translate(calc(-50% - 50vw - ${50 * self.progress}vw), calc(-50% + ${50 * self.progress}vh))`
-  //       }
-  //     },
-  //   });
-
-  //   ScrollTrigger.refresh();
-  // }, []);
-
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center">
       <img src="/images/features/feature2.svg" alt="feature2" />
       <div className="px-4 mt-[32px]">
         <h1 className="text-[30px]  font-bold">
