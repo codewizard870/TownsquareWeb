@@ -42,7 +42,7 @@ const RightPanelMenu = (props: Stage) => {
           Vision
         </li>
         <li
-          className={props.stage === "Features" ? "active text-white/50 text-base hidden md:inline-block" : "cursor-pointer text-white/50 text-base hidden md:inline-block"}
+          className={props.stage === "Features" ? "active text-white/50 text-base hidden md:list-item" : "cursor-pointer text-white/50 text-base hidden md:list-item"}
           onClick={() => handlePanelClick("feature")}
         >
           Features
