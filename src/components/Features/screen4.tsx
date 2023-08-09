@@ -1,13 +1,12 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useMemo } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 
 function Screen4() {
   const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
+ 
 
-  useEffect(() => {
+  useMemo(() => {
     ScrollTrigger.create({
       trigger: "#feature",
       start: "top top+=-2100px",
@@ -32,7 +31,7 @@ function Screen4() {
     });
 
     ScrollTrigger.refresh();
-  }, []);
+  }, [ref1]);
 
   return (
     <div ref={ref1} className="absolute flex items-center gap-[75px] -translate-x-1/2 -translate-y-1/2"
