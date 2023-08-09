@@ -1,5 +1,5 @@
-<a href="link">
-    <img width=100% src="TowneSquare Banner">
+<a href="https://www.townesquare.xyz/">
+    <img width=100% src="./.assets/TowneSquare_Banner.png" alt="TowneSquare Banner">
 </a>
 
 ---
