@@ -11,7 +11,7 @@ export const Footer = (props: any) => {
           <div>
             <div className="pb-2 text-sm font-semibold text-white font-Outfit">Follow us</div>
             <div className="flex">
-              <a className="items-center justify-center pr-3 mt-1 mr-3" href="https://twitter.com/TowneSquarexyz" target='_blank'>
+              <a className="items-center justify-center pr-3 mt-1 mr-3" href="https://twitter.com/TowneSquarexyz" target='_blank' rel="noreferrer">
                 {/* <BsTwitter
                   size={34}
                   style={{
@@ -22,7 +22,7 @@ export const Footer = (props: any) => {
                 /> */}
                 <img src="/images/sm-twitter.svg" alt="twitter_image"/>
               </a>
-              <a href="https://github.com/TowneSquare" target='_blank'>
+              <a href="https://github.com/TowneSquare" target='_blank' rel="noreferrer">
                 <BsGithub
                   size={34}
                   style={{
@@ -41,8 +41,8 @@ export const Footer = (props: any) => {
           <div className="flex flex-col space-y-3">
             <div className="text-sm font-bold text-white font-Outfit">Docs</div>
             <div className="text-[#CCCCCC] text-sm font-Outfit flex flex-col space-y-2">
-              <a href="https://github.com/TowneSquare" target="_blank">GitHub</a>
-              <a href="https://docs.townesquare.xyz/townesquare-whitepaper/" target="_blank">Gitbook</a>
+              <a href="https://github.com/TowneSquare" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://docs.townesquare.xyz/townesquare-whitepaper/" target="_blank" rel="noreferrer">Gitbook</a>
             </div>
           </div>
           <div className="flex flex-col space-y-3">
@@ -56,10 +56,10 @@ export const Footer = (props: any) => {
           <div className="flex flex-col space-y-3">
             <div className="text-sm font-bold text-white font-Outfit">Community</div> 
             <div className="text-[#CCCCCC] text-sm font-Outfit flex flex-col space-y-2">
-              <a href="https://twitter.com/TowneSquarexyz" target="_blank">Twitter</a>
-              <a href="https://discord.gg/yMRmqFzrDW" target="_blank">Discord</a>
-              <a href="https://medium.com/" target="_blank">Medium</a>
-              <a href="https://telegram.org/" target="_blank">Telegram</a>
+              <a href="https://twitter.com/TowneSquarexyz" target="_blank" rel="noreferrer">Twitter</a>
+              <a href="https://discord.gg/yMRmqFzrDW" target="_blank" rel="noreferrer">Discord</a>
+              <a href="https://medium.com/" target="_blank" rel="noreferrer">Medium</a>
+              <a href="https://telegram.org/" target="_blank" rel="noreferrer">Telegram</a>
             </div>
           </div>
         </div>

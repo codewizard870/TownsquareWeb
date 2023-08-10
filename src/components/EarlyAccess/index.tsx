@@ -46,7 +46,7 @@ function EarlyAccess() {
                   </a>
                 </div>
                 <div className="w-6 md:w-8 h-6 md:h-8">
-                  <a href="https://docs.townesquare.xyz/townesquare-whitepaper/" target='_blank'>
+                  <a href="https://docs.townesquare.xyz/townesquare-whitepaper/" target='_blank' rel="noreferrer">
                     <BsGit
                       size="auto"
                       style={{

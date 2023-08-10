@@ -104,7 +104,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
                 >
                   Join waitlist
                 </button>
-                <a href="https://twitter.com/townesquarexyz" target="_blank">
+                <a href="https://twitter.com/townesquarexyz" target="_blank" rel="noreferrer">
                   <button className="px-8 md:px-8 lg:px-8 h-12 flex flex-row items-center justify-center text-[18px] text-white font-semibold  hover:bg-[#FFFFFF33] active:bg-[#FFFFFF66] border-2 border-white rounded-full whitespace-nowrap">
                     <span className="block">Follow us on</span>
                     <img src="/images/twitter-header.svg" alt="twitter_image" />

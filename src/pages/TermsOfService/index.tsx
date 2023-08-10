@@ -16,7 +16,7 @@ const TermsOfService = () => {
               className="text-[#B882FF] flex md:text-[22px] font-Outfit font-medium md:leading-[34px]"
               to="/"
             >
-              <img src="/images/ArrowLeft.svg" className="mr-2" />
+              <img src="/images/ArrowLeft.svg" className="mr-2" alt="back"/>
               Back to website
             </Link>
           </div>
@@ -165,7 +165,7 @@ const TermsOfService = () => {
               className="text-[#B882FF] flex text-[22px] font-Outfit font-medium leading-[34px]"
               to="/"
             >
-              <img src="/images/ArrowLeft.svg" className="mr-2" />
+              <img src="/images/ArrowLeft.svg" className="mr-2" alt="back"/>
               Back to website
             </Link>
           </div>
