@@ -117,21 +117,11 @@ function Screen1() {
         className="absolute self-center -translate-x-1/2 -translate-y-1/2"
         style={{ left: `50vw`, top: `calc(25vh + 510px)` }}
       >
-        {/* <div ref={ref4} className="relative h-[600px] min-w-[316px] overflow-y-scroll">
-           <div className="sticky inset-0 z-50 h-full w-fit">
-            <img className="" src="/images/features/Header.svg" />
-          </div>
-          <div className="top-0 z-40 m-0">
-            <img className="h-full" src="/images/features/For_You.svg" />
-          </div>
-          <div className="sticky bottom-0 z-50 w-fit">
-            <img className="" src="/images/features/footer.svg" />
-          </div>
-        </div> */}
+       
         <div className="relative w-[316px]">
           <div className="relative">
             <img
-            src="/images/features/feed_m.svg"
+            src="/images/features/feed_bg.svg"
             alt="feed_bg"
             className="w-[316px] z-50"
           />
