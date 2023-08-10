@@ -1,13 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 import Home from '../../components/Home';
-import Header from '../../components/Header';
 import Vision from '../../components/Vision';
-import Features from '../../components/Features';
 import EarlyAccess from '../../components/EarlyAccess';
-import { Footer } from '../../components/Footer';
 import RightPanelMenu from '../../components/RightPanel';
 import FeaturesMobile from '../../components/FeaturesMobile';
 import Transparency from '../../components/Transparency';
+
+const Features = lazy(() => import("../../components/Features"))
 
 function Main() {
   const [currentComponent, setCurrentComponent] = useState<string | null>(null);
@@ -75,10 +74,11 @@ function Main() {
         
       </div>
       <Vision />
-      <Features />
+     <Suspense fallback={<div>LOADING</div>}>
+       <Features />
+     </Suspense>
       <FeaturesMobile />
       <EarlyAccess />
-      {/* <Footer/> */}
     </div>
   );
 }

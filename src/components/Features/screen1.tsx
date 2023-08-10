@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useMemo } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { images } from '../../constants/images';
 
@@ -7,7 +7,7 @@ function Screen1() {
   const ref2 = useRef(null);
   const ref3 = useRef(null);
 
-  useEffect(() => {
+  useMemo(() => {
     ScrollTrigger.create({
       trigger: "#feature",
       start: "top top+=-200px",
@@ -73,8 +73,8 @@ function Screen1() {
       <div 
         ref={ref1} className="absolute w-[340px] flex flex-col left-1/2 -translate-x-1/2 top-[25vh]"
       >
-        <h1 className="text-3xl  font-semibold text-center">Introducing</h1>
-        <div className="flex gap-4 self-center items-center">
+        <h1 className="text-3xl font-semibold text-center">Introducing</h1>
+        <div className="flex items-center self-center gap-4">
           <img src={images.logo} alt="logo" className="w-12 h-12" />
           <h2 className="text-[40px] font-bold">TowneSquare</h2>
         </div>
