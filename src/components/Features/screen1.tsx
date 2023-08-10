@@ -81,14 +81,12 @@ function Screen1() {
   }, []);
 
   // useEffect(() => {
-  //   window.scrollTo({ 
-  //     top: ref4?.current?.offsetTop | , 
-  //     behavior: "smooth" 
+  //   window.scrollTo({
+  //     top: ref4?.current?.offsetTop | ,
+  //     behavior: "smooth"
   //   });
-  
-    
+
   // }, [])
-  
 
   return (
     <>
@@ -116,22 +114,35 @@ function Screen1() {
         ref={ref2}
         // src="/images/features/feed.svg"
         // alt="feature1"
-        className="absolute h-[635px] self-center hover:cursor-move overflow-y-scroll overscroll-contain  -translate-x-1/2 -translate-y-1/2"
+        className="absolute self-center -translate-x-1/2 -translate-y-1/2"
         style={{ left: `50vw`, top: `calc(25vh + 510px)` }}
       >
-       
-        <div ref={ref4} className="relative h-fit">
-           <div className="sticky top-0 left-0 right-0 z-50 w-full h-full">
-            <img className="w-full h-full " src="/images/features/feed_m.svg" />
-            {/* Contacts */}
+        {/* <div ref={ref4} className="relative h-[600px] min-w-[316px] overflow-y-scroll">
+           <div className="sticky inset-0 z-50 h-full w-fit">
+            <img className="" src="/images/features/Header.svg" />
           </div>
-          <div className="sticky top-0 z-40 m-0">
+          <div className="top-0 z-40 m-0">
             <img className="h-full" src="/images/features/For_You.svg" />
           </div>
-          {/* <div className="sticky bottom-0 left-0 right-0 z-50 w-full h-full">
-           
-            Contacts
-          </div> */}
+          <div className="sticky bottom-0 z-50 w-fit">
+            <img className="" src="/images/features/footer.svg" />
+          </div>
+        </div> */}
+        <div className="relative w-[316px]">
+          <div className="relative">
+            <img
+            src="/images/features/feed_m.svg"
+            alt="layout"
+            className="w-[316px] z-50"
+          />
+          </div>
+          <div className="absolute z-30 inset-0 mt-[120px] mb-[74px] mx-[10px] overflow-x-hidden overscroll-contain overflow-y-scroll">
+            <img
+              src="/images/features/For_You.svg"
+              alt="layout"
+              className="w-full"
+            />
+          </div>
         </div>
       </div>
       <div
