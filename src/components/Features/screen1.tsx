@@ -1,4 +1,4 @@
-import { useRef, useEffect, useMemo, useCallback } from 'react';
+import { useRef, useMemo } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { images } from '../../constants/images';
 

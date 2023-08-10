@@ -1,11 +1,10 @@
-import { useRef, useEffect, useMemo } from 'react';
+import { useRef, useMemo } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 
 function Screen4() {
   const ref1 = useRef(null);
  
-
   useMemo(() => {
     ScrollTrigger.create({
       trigger: "#feature",
