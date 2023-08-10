@@ -1,6 +1,7 @@
 import { useRef, useMemo } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { images } from '../../constants/images';
+import "./features.css";
 
 function Screen1() {
   const ref1 = useRef(null);
@@ -80,9 +81,12 @@ function Screen1() {
         </div>
         <img src="/images/financial_img.png" alt="sign" className="self-center space-squiggle" />
       </div>
-      <img ref={ref2} src="/images/features/feed.svg" alt='feature1' className="absolute w-[300px] self-center  -translate-x-1/2 -translate-y-1/2"
-        style={{ left: `50vw`, top: `calc(25vh + 510px)` }}
-      />
+      <div ref={ref2} className="relative min-w-[316px]" style={{ left: `92%`, top: `calc(25vh + 510px)` }}>
+        <img src="/images/features/feature1/layout.svg" alt='layout' className="min-w-[316px]" />
+        <div className="hide-scrollbar absolute inset-0 mt-[114px] mb-[58px] mx-[10px] overflow-x-hidden overflow-y-scroll">
+          <img src="/images/features/feature1/content.svg" alt='layout' className="w-[10]" />
+        </div>
+      </div>
       <div ref={ref3} className="absolute w-[500px] -translate-y-1/2"
         style={{ left: `150vw`, top: `50vh` }}
       >
