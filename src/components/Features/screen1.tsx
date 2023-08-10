@@ -132,14 +132,14 @@ function Screen1() {
           <div className="relative">
             <img
             src="/images/features/feed_m.svg"
-            alt="layout"
+            alt="feed_bg"
             className="w-[316px] z-50"
           />
           </div>
           <div className="absolute z-30 inset-0 mt-[120px] mb-[74px] mx-[10px] overflow-x-hidden overscroll-contain overflow-y-scroll">
             <img
               src="/images/features/For_You.svg"
-              alt="layout"
+              alt="feed"
               className="w-full"
             />
           </div>
