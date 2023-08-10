@@ -7,13 +7,17 @@ type HeaderProps = {
   clickWaitlist: () => void;
 };
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+};
+
 const Header: React.FC<HeaderProps> = ({ clickWaitlist }) => {
   return (
     <div
       className="w-full px-6 py-4 z-20 fixed flex justify-between"
     >
       <div className="flex gap-2 items-center">
-        <img className="w-6 md:w-8 lg:w-12 h-6 md:h-8 lg:h-12" src={images.logo} alt="logo" />
+        <img className="w-6 md:w-8 lg:w-12 h-6 md:h-8 lg:h-12 cursor-pointer" src={images.logo} alt="logo" onClick={scrollToTop}/>
         <ScrollTrigger start="0px" end="220px" scrub={0.5}>
           <Tween from={{
             opacity: 1
