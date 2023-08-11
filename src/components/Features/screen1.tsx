@@ -89,6 +89,9 @@ function Screen1() {
           <div className="hide-scrollbar absolute inset-0 mt-[120px] mb-[58px] mx-[10px] overflow-x-hidden overflow-y-scroll">
             <img src="/images/features/feature1/content.svg" alt='layout' className="w-[10]" />
           </div>
+          <div className="absolute inset-0 mt-[522px] ml-[240px] mr-[20px] z-20">
+            <img src="/images/home/index/plus.svg" alt='layout' className="w-full"/>
+          </div>
         </div>
       </div>
       <div ref={ref3} className="absolute w-[500px] -translate-y-1/2"

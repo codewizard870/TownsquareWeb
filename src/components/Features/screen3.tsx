@@ -39,8 +39,7 @@ function Screen3() {
     >
       <div className="relative min-w-[316px]">
         <img src="/images/features/feature3/layout.svg" alt='layout' className="min-w-[316px]" />
-        <div className="hide-scrollbar absolute inset-0 mt-[114px] mb-[58px] mx-[10px] overflow-x-hidden overflow-y-scroll"
-        >
+        <div className="hide-scrollbar absolute inset-0 mt-[114px] mb-[58px] mx-[10px] overflow-x-hidden overflow-y-scroll">
           <img src="/images/features/feature3/content.svg" alt='layout' className="w-full" />
         </div>
       </div>
