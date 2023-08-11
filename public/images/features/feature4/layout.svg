@@ -1,5 +1,6 @@
 <svg width="316" height="664" viewBox="0 0 316 664" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_335_125631)">
+<rect x="10" y="10" width="296" height="643.8" rx="16" fill="black"/>
 <mask id="path-4-inside-1_335_125631" fill="white">
 <path d="M10 590H306.922V637.387C306.922 646.746 299.335 654.333 289.976 654.333H26.9458C17.5869 654.333 10 646.746 10 637.387V590Z"/>
 </mask>
@@ -34,6 +35,7 @@
 <path d="M289.239 57.8381C289.239 57.4585 288.932 57.1508 288.552 57.1508C288.172 57.1508 287.865 57.4585 287.865 57.8381C287.865 58.2177 288.172 58.5254 288.552 58.5254C288.932 58.5254 289.239 58.2177 289.239 57.8381Z" stroke="white" stroke-width="1.37464" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <rect x="0.5" y="0.5" width="315" height="662.8" rx="23.5" stroke="url(#paint0_linear_335_125631)" stroke-opacity="0.2"/>
+<rect x="0.5" y="0.5" width="315" height="662.8" rx="23.5" stroke="url(#paint1_linear_335_125631)" stroke-opacity="0.8"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_335_125631" transform="scale(0.000976563)"/>
@@ -42,6 +44,19 @@
 <use xlink:href="#image1_335_125631" transform="scale(0.00195313)"/>
 </pattern>
 <linearGradient id="paint0_linear_335_125631" x1="526.993" y1="483.656" x2="17.9404" y2="576.32" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F1C6DD"/>
+<stop offset="0.139053" stop-color="#C1A4E8"/>
+<stop offset="0.238718" stop-color="#B8E2FB"/>
+<stop offset="0.374927" stop-color="#F2EFE8"/>
+<stop offset="0.477914" stop-color="#F9DCDD"/>
+<stop offset="0.557645" stop-color="#E1C1E5"/>
+<stop offset="0.624089" stop-color="#BDAFE3"/>
+<stop offset="0.720431" stop-color="#C7EDEB"/>
+<stop offset="0.830062" stop-color="#E7F5EB"/>
+<stop offset="0.913116" stop-color="#F2F0E7"/>
+<stop offset="1" stop-color="#DDC1E1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_335_125631" x1="526.993" y1="483.656" x2="17.9404" y2="576.32" gradientUnits="userSpaceOnUse">
 <stop stop-color="#F1C6DD"/>
 <stop offset="0.139053" stop-color="#C1A4E8"/>
 <stop offset="0.238718" stop-color="#B8E2FB"/>
