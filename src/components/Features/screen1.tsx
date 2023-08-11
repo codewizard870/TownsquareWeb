@@ -62,7 +62,7 @@ function Screen1() {
       onUpdate: (self) => {
         if (ref3.current != null && (ref3.current as any).style != null) {
           let node = ref3.current as any;
-          node.style.transform = `translate(calc(-120vw + 235px - ${100 * self.progress}vw), calc(-50%))`
+          node.style.transform = `translate(calc(-120vw + 230px - ${100 * self.progress}vw), calc(-50%))`
         }
       },
     });
@@ -71,7 +71,7 @@ function Screen1() {
 
   return (
     <>
-      <div 
+      <div
         ref={ref1} className="absolute w-[340px] flex flex-col left-1/2 -translate-x-1/2 top-[25vh]"
       >
         <h1 className="text-3xl font-semibold text-center">Introducing</h1>
@@ -81,10 +81,14 @@ function Screen1() {
         </div>
         <img src="/images/financial_img.png" alt="sign" className="self-center space-squiggle" />
       </div>
-      <div ref={ref2} className="relative min-w-[316px]" style={{ left: `92%`, top: `calc(25vh + 510px)` }}>
-        <img src="/images/features/feature1/layout.svg" alt='layout' className="min-w-[316px]" />
-        <div className="hide-scrollbar absolute inset-0 mt-[114px] mb-[58px] mx-[10px] overflow-x-hidden overflow-y-scroll">
-          <img src="/images/features/feature1/content.svg" alt='layout' className="w-[10]" />
+      <div ref={ref2} className="absolute w-[316px] h-[665px] self-center -translate-x-1/2 -translate-y-1/2"
+        style={{ left: `50vw`, top: `calc(25vh + 510px)` }}
+      >
+        <div className="relative min-w-[316px]">
+          <img src="/images/features/feature1/layout.svg" alt='layout' className="min-w-[316px]" />
+          <div className="hide-scrollbar absolute inset-0 mt-[120px] mb-[58px] mx-[10px] overflow-x-hidden overflow-y-scroll">
+            <img src="/images/features/feature1/content.svg" alt='layout' className="w-[10]" />
+          </div>
         </div>
       </div>
       <div ref={ref3} className="absolute w-[500px] -translate-y-1/2"
