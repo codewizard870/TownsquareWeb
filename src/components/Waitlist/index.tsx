@@ -83,8 +83,8 @@ const Waitlist: React.FC<Props> = ({ isModel, onClose }) => {
             {error ? (
               <p className="text-[#FF6069] font-Outfit text-lg pt-3">{error}</p>
             ) : isComplete ? (
-              <p className="text-[#32D583] font-Outfit text-lg pt-3">
-                Thanks for signing up, we won't let you down!
+              <p className="text-[#B882FF] font-Outfit text-lg pt-3">
+                "We got you! You will be first to know when our app is officially ready for beta!"
               </p>
             ) : null}
           </div>
