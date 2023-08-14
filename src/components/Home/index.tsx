@@ -122,8 +122,9 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
                   left: offset.left,
                   top: offset.top,
                 }}
+                loading="lazy"
               />
-              <img src="/images/home/feed.svg" alt="feed" className="z-10" />
+              <img src="/images/home/feed.png" alt="feed" className="z-10" loading="lazy" />
             </div>
           </div>
         </div>
