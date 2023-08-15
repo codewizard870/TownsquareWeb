@@ -74,9 +74,9 @@ function Main() {
       <Suspense fallback={<div>LOADING</div>}>
         <Vision />
       </Suspense>
-      <Suspense fallback={<div>LOADING</div>}>
+      {/* <Suspense fallback={<div>LOADING</div>}>
         <Features />
-      </Suspense>
+      </Suspense> */}
       <Suspense fallback={<div>LOADING</div>}>
         <FeaturesMobile />
       </Suspense>
