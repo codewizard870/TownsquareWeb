@@ -14,9 +14,13 @@ function Main() {
   const [isTransparencyVisible, setIsTransparencyVisible] = useState(false);
   const [isJoinAppear, setIsJoinAppear] = useState(false);
 
-  const [isMobile, setMobile] = useState(false);
+  const [isWeb, setWebMode] = useState(true);
 
   useEffect(() => {
+    if (window.innerWidth > 768) {
+      setWebMode(false);
+    }
+
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
@@ -57,16 +61,14 @@ function Main() {
       window.removeEventListener('scroll', handleScroll);
     };
 
-    if (window.innerWidth < 768) {
-      setMobile(true)
-    }
+    console.log()
   }, []);
 
   const handleClick = () => {
     setIsTransparencyVisible(!isTransparencyVisible);
     setIsJoinAppear(true);
   }
-
+console.log(isWeb)
   return (
     <div>
       <Home clickWaitlist={handleClick} />
@@ -80,11 +82,11 @@ function Main() {
       <Suspense fallback={<div>LOADING</div>}>
         <Vision />
       </Suspense>
-      {/* {!isMobile &&
+      {isWeb &&
         <Suspense fallback={<div>LOADING</div>}>
           <Features />
         </Suspense>
-      } */}
+      }
       <Suspense fallback={<div>LOADING</div>}>
         <FeaturesMobile />
       </Suspense>
