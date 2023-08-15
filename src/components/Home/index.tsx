@@ -30,11 +30,13 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             src="/images/home/left_web.svg"
             alt="background"
             className="top-0 left-0 h-full"
+            loading="lazy"
           />
           <img
             src="/images/home/right_web.svg"
             alt="background"
             className="absolute top-0 right-0 h-full"
+            loading="lazy"
           />
         </div>
         <div className="absolute z-0 hidden w-full md:block lg:hidden">
@@ -42,11 +44,13 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             src="/images/home/left_tablet.svg"
             alt="background"
             className="top-0 left-0 h-full"
+            loading="lazy"
           />
           <img
             src="/images/home/right_tablet.svg"
             alt="background"
             className="absolute top-[40vh] right-0 h-full"
+            loading="lazy"
           />
         </div>
         <div className="absolute z-0 block w-full md:hidden">
@@ -54,11 +58,13 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
             src="/images/home/left_mobile.svg"
             alt="background"
             className="top-0 left-0"
+            loading="lazy"
           />
           <img
             src="/images/home/right_mobile.svg"
             alt="background"
             className="absolute top-[20vh] right-0"
+            loading="lazy"
           />
         </div>
 
@@ -92,6 +98,7 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
                       src="/images/home/ios_logo.svg"
                       className="w-6"
                       alt="logo"
+                      loading="lazy"
                     />
                     &nbsp;iOS
                   </div>
@@ -107,7 +114,8 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
                 <a href="https://twitter.com/townesquarexyz" target="_blank" rel="noreferrer">
                   <button className="px-8 md:px-8 lg:px-8 h-12 flex flex-row items-center justify-center text-[18px] text-white font-semibold  hover:bg-[#FFFFFF33] active:bg-[#FFFFFF66] border-2 border-white rounded-full whitespace-nowrap">
                     <span className="block">Follow us on</span>
-                    <img src="/images/twitter-header.svg" alt="twitter_image" />
+                    <img src="/images/twitter-header.svg" alt="twitter_image"
+                      loading="lazy" />
                     <span className="hidden pt-[2px] lg:block">Twitter</span>
                   </button>
                 </a>

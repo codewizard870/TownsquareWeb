@@ -1,12 +1,12 @@
 import { useEffect, useState, lazy, Suspense } from 'react';
 import Home from '../../components/Home';
-import Vision from '../../components/Vision';
-import EarlyAccess from '../../components/EarlyAccess';
 import RightPanelMenu from '../../components/RightPanel';
-import FeaturesMobile from '../../components/FeaturesMobile';
 import Transparency from '../../components/Transparency';
 
+const Vision = lazy(() => import("../../components/Vision"))
 const Features = lazy(() => import("../../components/Features"))
+const FeaturesMobile = lazy(() => import("../../components/FeaturesMobile"))
+const EarlyAccess = lazy(() => import("../../components/EarlyAccess"))
 
 function Main() {
   const [currentComponent, setCurrentComponent] = useState<string | null>(null);
@@ -64,19 +64,25 @@ function Main() {
   return (
     <div>
       <Home clickWaitlist={handleClick} />
-      {/* <Transparency
+      <Transparency
         isJoinAppear={isJoinAppear}
         isVisible={isTransparencyVisible}
         onClose={handleClick}
-      /> */}
-      {/* <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} /> */}
-      {/* <div className={`${currentComponent !== "Home" && currentComponent !== null ? "fixed bottom-0 z-40 backdrop-blur-xl bg-white/30 h-[44px] w-[100%] md:hidden" : "hidden"}`} /> */}
-      {/* <Vision /> */}
+      />
+      <RightPanelMenu stage={currentComponent} isVisible={currentComponent !== "Home" && currentComponent !== null} />
+      <div className={`${currentComponent !== "Home" && currentComponent !== null ? "fixed bottom-0 z-40 backdrop-blur-xl bg-white/30 h-[44px] w-[100%] md:hidden" : "hidden"}`} />
+      <Suspense fallback={<div>LOADING</div>}>
+        <Vision />
+      </Suspense>
       {/* <Suspense fallback={<div>LOADING</div>}>
         <Features />
       </Suspense> */}
-      {/* <FeaturesMobile /> */}
-      {/* <EarlyAccess /> */}
+      {/* <Suspense fallback={<div>LOADING</div>}>
+        <FeaturesMobile />
+      </Suspense> */}
+      <Suspense fallback={<div>LOADING</div>}>
+        <EarlyAccess />
+      </Suspense>
     </div>
   );
 }
