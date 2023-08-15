@@ -38,7 +38,7 @@ function EarlyAccess() {
                 <div className="w-6 md:w-8 h-6 md:h-8">
                   <a href='https://github.com/TowneSquare' target="_blank" rel="noreferrer">
                     <BsGithub
-                      size="auto"
+                      size="100%"
                       style={{
                         color: "#F2F0FF",
                       }}
@@ -48,7 +48,7 @@ function EarlyAccess() {
                 <div className="w-6 md:w-8 h-6 md:h-8">
                   <a href="https://docs.townesquare.xyz/townesquare-whitepaper/" target='_blank' rel="noreferrer">
                     <BsGit
-                      size="auto"
+                      size="100%"
                       style={{
                         color: "#F2F0FF",
                       }}
