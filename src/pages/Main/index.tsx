@@ -14,6 +14,8 @@ function Main() {
   const [isTransparencyVisible, setIsTransparencyVisible] = useState(false);
   const [isJoinAppear, setIsJoinAppear] = useState(false);
 
+  const [isMobile, setMobile] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -54,6 +56,10 @@ function Main() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+
+    if (window.innerWidth < 768) {
+      setMobile(true)
+    }
   }, []);
 
   const handleClick = () => {
@@ -74,9 +80,11 @@ function Main() {
       <Suspense fallback={<div>LOADING</div>}>
         <Vision />
       </Suspense>
-      {/* <Suspense fallback={<div>LOADING</div>}>
-        <Features />
-      </Suspense> */}
+      {!isMobile &&
+        <Suspense fallback={<div>LOADING</div>}>
+          <Features />
+        </Suspense>
+      }
       <Suspense fallback={<div>LOADING</div>}>
         <FeaturesMobile />
       </Suspense>
