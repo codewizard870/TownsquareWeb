@@ -88,9 +88,9 @@ console.log(isWeb)
       <Suspense fallback={<div>LOADING</div>}>
         <FeaturesMobile />
       </Suspense>
-      {/* <Suspense fallback={<div>LOADING</div>}>
+      <Suspense fallback={<div>LOADING</div>}>
         <EarlyAccess />
-      </Suspense> */}
+      </Suspense>
     </div>
   );
 }
