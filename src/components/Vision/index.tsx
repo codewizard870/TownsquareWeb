@@ -135,8 +135,9 @@ function Vision() {
                   <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
                       className="w-full"
-                      src="/images/financial_freedom.svg"
+                      src="/images/financial_freedom.png"
                       alt="financial_freedom"
+                      loading="lazy"
                     />
                   </div>
                   <div>
@@ -144,8 +145,9 @@ function Vision() {
                     <div className="py-4">
                       <h1 className="md:text-[40px] text-[30px] font-bold ">Financial freedom</h1>
                       <img
-                        src="/images/financial_img.svg"
+                        src="/images/financial_img.png"
                         alt="financial_image"
+                        loading="lazy"
                       />
                     </div>
                     <p className="font-normal text-[18px] leading-[30px] md:leading-[34px] md:text-[22px]">
@@ -162,8 +164,9 @@ function Vision() {
                   <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
                       className="w-full"
-                      src="/images/informational_freedom.svg"
+                      src="/images/informational_freedom.png"
                       alt="financial_freedom"
+                      loading="lazy"
                     />
                   </div>
                   <div>
@@ -171,8 +174,9 @@ function Vision() {
                     <div className="py-4">
                       <h1 className="md:text-[40px] text-[30px] font-bold ">Informational freedom</h1>
                       <img
-                        src="/images/financial_img.svg"
+                        src="/images/financial_img.png"
                         alt="financial_image"
+                        loading="lazy"
                       />
                     </div>
                     <p className="font-normal text-[18px] leading-[30px] md:leading-[34px]  md:text-[22px]">
@@ -191,8 +195,9 @@ function Vision() {
                    <div className="md:mx-8 lg:mx-8 lg:w-1/3 md:w-1/2">
                     <img
                       className="w-full"
-                      src="/images/Identity_freedom.svg"
+                      src="/images/Identity_freedom.png"
                       alt="financial_freedom"
+                      loading="lazy"
                     />
                   </div>
                   <div>
@@ -200,8 +205,9 @@ function Vision() {
                     <div className="py-4">
                       <h1 className="md:text-[40px] text-[30px] font-bold">Identity freedom</h1>
                       <img
-                        src="/images/financial_img.svg"
+                        src="/images/financial_img.png"
                         alt="financial_image"
+                        loading="lazy"
                       />
                     </div>
                     <p className="font-normal text-[18px] leading-[30px] md:leading-[34px] md:text-[22px]">
