@@ -27,7 +27,7 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px; 
+  line-height: 50px;
   padding-bottom: 16px;
 }
 
@@ -42,4 +42,13 @@
 
 .feature-contextual-title-left-padding {
   padding-left: 25px;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  cursor: url("../../assets/images/feature_cursor.svg"), pointer;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }

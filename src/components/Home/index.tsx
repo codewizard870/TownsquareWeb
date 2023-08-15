@@ -132,7 +132,15 @@ const Home: React.FC<HeaderProps> = ({ clickWaitlist }) => {
                 }}
                 loading="lazy"
               />
-              <img src="/images/home/feed.png" alt="feed" className="z-10" loading="lazy" />
+              <div className="relative min-w-[316px]">
+                <img src="/images/home/index/layout.svg" alt='layout' className="min-w-[316px]" loading="lazy" />
+                <div className="hide-scrollbar absolute inset-0 mt-[114px] mb-[58px] mx-[10px] overflow-x-hidden overflow-y-scroll z-10">
+                  <img src="/images/home/index/content.svg" alt='layout' className="w-full" loading="lazy" />
+                </div>
+                <div className="absolute inset-0 mt-[545px] ml-[245px] mr-[10px] z-20">
+                  <img src="/images/home/index/plus.svg" alt='layout' className="w-full" loading="lazy" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
