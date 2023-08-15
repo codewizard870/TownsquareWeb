@@ -80,11 +80,11 @@ function Main() {
       <Suspense fallback={<div>LOADING</div>}>
         <Vision />
       </Suspense>
-      {!isMobile &&
+      {/* {!isMobile &&
         <Suspense fallback={<div>LOADING</div>}>
           <Features />
         </Suspense>
-      }
+      } */}
       <Suspense fallback={<div>LOADING</div>}>
         <FeaturesMobile />
       </Suspense>
