@@ -35,7 +35,7 @@ function Screen6() {
 
   return (
     <div ref={ref1} className="absolute w-[740px] -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center" id="first" style={{ left: "150vw", top: `50vh` }}>
-      <img src="/images/features/feature7.svg" alt='feature7' />
+      <img src="/images/features/feature7.png" alt='feature7' loading="lazy"/>
       <span className="text-[32px] font-medium text-center">
         Discover new friends, communities, creators, <br />and on-chain items based on your interests
       </span>

@@ -1,7 +1,7 @@
 function Screen2() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <img src="/images/features/feature2.svg" alt="feature2" />
+      <img src="/images/features/feature2.png" alt="feature2" loading="lazy"/>
       <div className="px-4 mt-[32px]">
         <h1 className="text-[30px]  font-bold">
           One-click community onboarding

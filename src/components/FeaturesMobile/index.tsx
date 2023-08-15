@@ -78,8 +78,9 @@ function FeaturesMobile() {
             <div className="flex flex-col items-center justify-center w-screen h-screen">
               <img
                 className=""
-                src="/images/features/feature9.svg"
+                src="/images/features/feature9.png"
                 alt="feature9"
+                loading="lazy"
               />
               <p className="text-[18px] mt-20 font-medium text-center">
                 Experience boundless possibilities with your on-chain verifiable

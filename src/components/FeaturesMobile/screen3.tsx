@@ -1,7 +1,7 @@
 function Screen3() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <img src="/images/features/feature3.svg" alt="feature3" />
+      <img src="/images/features/feature3.png" alt="feature3" loading="lazy"/>
       <div className="px-4 mt-[32px]">
         <h1 className="text-[30px] font-bold">
           An easy-to-use

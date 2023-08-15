@@ -38,9 +38,9 @@ function Screen4() {
     >
       
       <div className="relative min-w-[316px]">
-        <img src="/images/features/feature4/layout.svg" alt='layout' className="min-w-[316px]" />
+        <img src="/images/features/feature4/layout.png" alt='layout' className="min-w-[316px]" loading="lazy"/>
         <div className="hide-scrollbar absolute inset-0 mt-[88px] mb-[74px] mx-[10px] overflow-x-hidden overflow-y-scroll">
-          <img src="/images/features/feature4/content.svg" alt='layout' className="w-full" />
+          <img src="/images/features/feature4/content.png" alt='layout' className="w-full" loading="lazy"/>
         </div>
       </div>
       <div className="feature-contextual-title-left-padding">

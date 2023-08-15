@@ -52,8 +52,9 @@ function Screen1() {
       </div>
       <div ref={ref2} className="absolute flex flex-col items-center self-center justify-center w-full mt-10 -translate-x-1/2 -translate-y-1/2" style={{ left: `50vw`, top: `450px` }}>
         <img
-          src="/images/features/feed.svg"
+          src="/images/features/feed.png"
           alt="feature1"
+          loading="lazy"
         />
         <div
           className="px-4 mt-[32px]"

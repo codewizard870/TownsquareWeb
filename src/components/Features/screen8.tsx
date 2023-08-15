@@ -35,7 +35,7 @@ function Screen8() {
 
   return (
     <div ref={ref1} className="absolute w-[740px] -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center" style={{ left: "150vw", top: `50vh` }}>
-      <img src="/images/features/feature9.svg" alt='feature9' />
+      <img src="/images/features/feature9.png" alt='feature9' loading="lazy"/>
       <span className="text-[32px] font-medium text-center pt-10">
       Experience boundless possibilities with your on-chain verifiable identity – gain exclusive event access, exciting airdrop rewards, and in-app perks!
       </span>

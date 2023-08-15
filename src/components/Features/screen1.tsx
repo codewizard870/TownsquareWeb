@@ -85,9 +85,9 @@ function Screen1() {
         style={{ left: `50vw`, top: `calc(25vh + 510px)` }}
       >
         <div className="relative min-w-[316px]">
-          <img src="/images/features/feature1/layout.svg" alt='layout' className="min-w-[316px]" />
+          <img src="/images/features/feature1/layout.png" alt='layout' className="min-w-[316px]" loading="lazy"/>
           <div className="hide-scrollbar absolute inset-0 mt-[120px] mb-[58px] mx-[10px] overflow-x-hidden overflow-y-scroll">
-            <img src="/images/features/feature1/content.svg" alt='layout' className="w-[10]" />
+            <img src="/images/features/feature1/content.png" alt='layout' className="w-[10]" loading="lazy"/>
           </div>
           <div className="absolute inset-0 mt-[522px] ml-[240px] mr-[20px] z-20">
             <img src="/images/home/index/plus.svg" alt='layout' className="w-full"/>
