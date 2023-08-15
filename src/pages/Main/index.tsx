@@ -17,7 +17,7 @@ function Main() {
   const [isWeb, setWebMode] = useState(true);
 
   useEffect(() => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth < 768) {
       setWebMode(false);
     }
 
@@ -60,8 +60,6 @@ function Main() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-
-    console.log()
   }, []);
 
   const handleClick = () => {
